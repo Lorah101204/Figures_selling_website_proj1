@@ -1,197 +1,206 @@
 <!DOCTYPE html>
 <html lang = "vi"> <!--Xac dinh ngon ngu chinh cua tai lieu html-->
-    <head prefix = "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Lel Shop</title>
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content ="LEL SHOP">
-            <meta property="og:url" content="https://lelshop.com/">
-        <link rel="canonical" href="https://lelshop.com/">
-                <link rel="icon" type="Image/png" href="Image/Logolel.png">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
-            <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-            <link rel="stylesheet" href="Css/style.css">
-        <style>
-            .slick-slider {
-                margin-bottom: 30px;
-            }
-    
-            .slick-dots {
-                position: relative;
-                bottom: -15px;
-                display: block;
-                width: 100%;
-                padding: 0;
-                list-style: none;
-                text-align: center;
-            }
-    
-            .slick-dots li {
-                position: relative;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                margin: 0 5px;
-                padding: 0;
-    
-                cursor: pointer;
-            }
-    
-            .slick-dots li button {
-                font-size: 0;
-                line-height: 0;
-                display: block;
-                width: 20px;
-                height: 20px;
-                padding: 5px;
-                cursor: pointer;
-                color: transparent;
-                border: 0;
-                outline: none;
-                background: transparent;
-            }
-    
-            .slick-dots li button:hover,
-            .slick-dots li button:focus {
-                outline: none;
-            }
-    
-            .slick-dots li button:hover:before,
-            .slick-dots li button:focus:before {
-                opacity: 1;
-            }
-    
-            .slick-dots li button:before {
-                content: " ";
-                line-height: 20px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 12px;
-                height: 12px;
-                text-align: center;
-                opacity: .25;
-                background-color: black;
-                border-radius: 50%;
-    
-            }
-    
-            .slick-dots li.slick-active button:before {
-                opacity: .75;
-                background-color: black;
-            }
-    
-            .slick-dots li button.thumbnail img {
-                width: 0;
-                height: 0;
-            }
-        </style>
-    </head>
-    <body id="page_homepage" class="front_page">
-        <div class = "fi-layoutRole">
-            <div class="fi-layoutRole__Header">
-                <div class="fi-headerNaviRole">
-                    <div class="fi-headerNaviRole__left">
-                        <div class="fi-headerNaviRole__search">
-
-        <div class="fi-headerSearch">
-            <div class="fi-headerSearch__category">
-                <div class="fi-select fi-select_search">
-                    <select name="category_id" class="category_id">
-                        <option value="">Tất cả sản phầm</option>
-                        <option value="1">Blue Archive</option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
-                        <option value="5"></option>
-        </div>
-        <div class="fi-headerSearch__keyword">
-            <div class="fi-input">
-                <input type="search" name="name" maxlength="40" class="search-name" placeholder="Danh mục" />
-                <button class="fi-headerSearch__keyword" type="submit">
-                    <div class="fi-icon">
-                        <img src="icon/search-dark.svg" alt="">
-                    </div>
-                </button>
-            </div>
-        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fi-headerRole__navSP">
-                <div class="fi-headerNavSp">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </div>
-        <div class="fi-headerNaviRole__right">
-            <div class="fi-headerNaviRole__nav">
-                <div class="fi-headerNav">
-                    <div class="fi-headerNav__item">
-                        <a>
-                            <i class="fi-headerNav__itemIcon fas fa fa-user fa-fw"></i>
-                            <span class="fi-headerNav__itemLink">Đăng ký thành viên</span>
-                        </a>
-                    </div>
-                    <div class="fi-headerNav__item">
-                        <a>
-                            <i class="fi-headerNav__itemIcon fas fa-heart fa-fw"></i>
-                            <span class="fi-headerNav__itemLink">Yêu thích</span>
-                        </a>
-                    </div>
-                    <div class="fi-headerNav__item">
-                        <a>
-                            <i class="fi-headerNav__itemIcon fas fa-lock fa-fw"></i>
-                            <span class="fi-headerNav__itemLink">Đăng nhập</span>
-                        </a>
-                    </div>
-                    <div class="fi-headerNav__item">
-                        <a>
-                            <i class="fi-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
-                            <span class="fi-headerNav__itemLink">Hỗ trợ</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="fi-headerRole__cart">
-                    <div class="fi-cartNaviWarp">
-                        <div class="fi-cartNavi">
-                            <i class="fi-cartNavi__icon fas fa-shopping-cart">
-                                <span class="fi-cartNavi__badge">0</span>
-                            </i>
-                            <div class="fi-cartNavi_label">
-                                <div class="ec-cartNavi__price">0đ</div>
-                            </div>
-                        </div>
-                        <div class="fi-cartNaviNull">
-                            <div class="fi-cartNaviNull__mess">
-                                <p>Không có sản phẩm trong giỏ của bạn</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <style>
-            @media screen and (max-width:500px) {
-                .fi-headerTitle__title img {width:200px;}
-            }
-        </style>
-        <div class="fi-headerRole">
-            <div class="fi-headerRold__title">
-                <div class="fi-headerTitle">
-                    <div class="fi-headerTitle__title">
-                        <h1>
-                            <a href="https://lelshop.com/">
-                                <img src="Image/Panel.png">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head prefix = "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Lel Shop</title>
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content ="LEL SHOP">
+		<meta property="og:url" content="https://lelshop.com/">
+		<link rel="canonical" href="https://lelshop.com/">
+		<link rel="icon" type="Image/png" href="Image/Logolel.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+		<link rel="stylesheet" href="Css/style.css">
+		<style>
+			.slick-slider {
+				margin-bottom: 30px;
+			}
+	
+			.slick-dots {
+				position: relative;
+				bottom: -15px;
+				display: block;
+				width: 100%;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+			}
+	
+			.slick-dots li {
+				position: relative;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin: 0 5px;
+				padding: 0;
+	
+				cursor: pointer;
+			}
+	
+			.slick-dots li button {
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				padding: 5px;
+				cursor: pointer;
+				color: transparent;
+				border: 0;
+				outline: none;
+				background: transparent;
+			}
+	
+			.slick-dots li button:hover,
+			.slick-dots li button:focus {
+				outline: none;
+			}
+	
+			.slick-dots li button:hover:before,
+			.slick-dots li button:focus:before {
+				opacity: 1;
+			}
+	
+			.slick-dots li button:before {
+				content: " ";
+				line-height: 20px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 12px;
+				height: 12px;
+				text-align: center;
+				opacity: .25;
+				background-color: black;
+				border-radius: 50%;
+	
+			}
+	
+			.slick-dots li.slick-active button:before {
+				opacity: .75;
+				background-color: black;
+			}
+	
+			.slick-dots li button.thumbnail img {
+				width: 0;
+				height: 0;
+			}
+		</style>
+	</head>
+	<body id="page_homepage" class="front_page">
+		<div class = "fi-layoutRole">
+			<div class="fi-layoutRole__Header">
+				<div class="fi-headerNaviRole">
+					<!--Left Header-->
+					<div class="fi-headerNaviRole__left">
+						<!--Search Bar-->
+						<div class="fi-headerNaviRole__search">
+							<div class="fi-headerSearch">
+								<form>
+									<div class="fi-headerSearch__category">
+										<div class="fi-select fi-select_search">
+											<select name="category_id" class="category_id">
+												<option value="">Tất cả sản phầm</option>
+												<option value="1">Blue Archive</option>
+												<option value="2"></option>
+												<option value="3"></option>
+												<option value="4"></option>
+												<option value="5"></option>
+										</div>
+									</div>
+									<div class="fi-headerSearch__keyword">
+										<div class="fi-input">
+												<input type="search" name="name" maxlength="40" class="search-name" placeholder="Tìm kiếm" />
+												<button class="fi-headerSearch__keyword" type="submit">
+													<div class="fi-icon">
+														<img src="icon/search-dark.svg" alt="">
+													</div>
+												</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!--End of Search Bar-->
+						<div class="fi-headerRole__navSP">
+							<div class="fi-headerNavSp">
+								<i class="fas fa-bars"></i>
+							</div>
+						</div>
+					</div>
+					<!--End of Left Header-->
+					<!--Right Header-->
+					<div class="fi-headerNaviRole__right">
+						<div class="fi-headerNaviRole__nav">
+							<div class="fi-headerNav">
+								<div class="fi-headerNav__item">
+									<a href="https://lelshop.com/signup">
+										<i class="fi-headerNav__itemIcon fas fa fa-user fa-fw"></i>
+										<span class="fi-headerNav__itemLink">Đăng ký thành viên</span>
+									</a>
+								</div>
+								<div class="fi-headerNav__item">
+									<a href="https://lelshop.com/user/favorite">
+										<i class="fi-headerNav__itemIcon fas fa-heart fa-fw"></i>
+										<span class="fi-headerNav__itemLink">Yêu thích</span>
+									</a>
+								</div>
+								<div class="fi-headerNav__item">
+									<a href="https://lelshop.com/login">
+										<i class="fi-headerNav__itemIcon fas fa-lock fa-fw"></i>
+										<span class="fi-headerNav__itemLink">Đăng nhập</span>
+									</a>
+								</div>
+								<div class="fi-headerNav__item">
+									<a href="https://lelshop.com/faq">
+										<i class="fi-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
+										<span class="fi-headerNav__itemLink">Hỗ trợ</span>
+									</a>
+								</div>
+							</div>
+							<div class="fi-headerRole__cart">
+								<div class="fi-cartNaviWarp">
+									<div class="fi-cartNavi">
+										<i class="fi-cartNavi__icon fas fa-shopping-cart">
+											<span class="fi-cartNavi__badge">0</span>
+										</i>
+										<div class="fi-cartNavi_label">
+											<div class="ec-cartNavi__price">0đ</div>
+										</div>
+									</div>
+									<div class="fi-cartNaviNull">
+										<div class="fi-cartNaviNull__mess">
+											<p>Không có sản phẩm trong giỏ của bạn</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--End of Right Header-->
+				</div>
+			</div>
+		</div>
+		<style>
+			@media screen and (max-width:500px) {
+				.fi-headerTitle__title img {width:200px;}
+			}
+		</style>
+		<div class="fi-headerRole">
+			<div class="fi-headerRold__title">
+				<div class="fi-headerTitle">
+					<div class="fi-headerTitle__title">
+						<h1>
+							<a href="https://lelshop.com/">
+								<img src="Image/Panel.png">
+							</a>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
 
