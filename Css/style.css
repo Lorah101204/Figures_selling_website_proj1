@@ -1,0 +1,21 @@
+@charset "UTF-8";
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+summary {
+    display: list-item;
+}
+
+.ec-headingTitle {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: normal;
+    color: #525263; }
