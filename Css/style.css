@@ -14,8 +14,21 @@ summary {
     display: list-item;
 }
 
-.ec-headingTitle {
+.fi-headingTitle {
     margin: 0 0 8px;
     font-size: 32px;
     font-weight: normal;
     color: #525263; }
+
+.fi-headerTitle .fi-headerTitle__title {
+    text-align: center; }
+.fi-headerTitle .fi-headerTitle__title h1 {
+        margin: 0;
+        padding: 0; }
+.fi-headerTitle .fi-headerTitle__title a {
+        display: inline-block;
+        margin-bottom: 30px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: black; }
