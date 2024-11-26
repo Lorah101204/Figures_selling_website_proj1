@@ -8,11 +8,12 @@
 		<meta property="og:site_name" content ="LEL SHOP">
 	<!--<meta property="og:url" content="https://lelshop.com/">
 		<link rel="canonical" href="https://lelshop.com/">  -->
-		<link rel="icon" type="Image/png" href="Image/Logolel.png">
+		<link rel="icon" type="Image/png" href="/Image/Logolel.png">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-		<link rel="stylesheet" href="Css/style.css">
+		<link rel="stylesheet" href="/Css/style.css">
+		<!--slick_slider custom-->
 		<style> 
 			.slick-slider {
 				margin-bottom: 30px;
@@ -75,7 +76,6 @@
 				opacity: .25;
 				background-color: black;
 				border-radius: 50%;
-	
 			}
 	
 			.slick-dots li.slick-active button:before {
@@ -88,10 +88,11 @@
 				height: 0;
 			}
 		</style>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 	</head>
 	<body id="page_homepage" class="front_page">
 		<div class = "fi-layoutRole">
-			<div class="fi-layoutRole__Header">
+			<div class="fi-layoutRole__header">
 				<div class="fi-headerNaviRole">
 					<!--Left Header-->
 					<div class="fi-headerNaviRole__left">
@@ -104,10 +105,10 @@
 											<select name="category_id" class="category_id">
 												<option value="">Tất cả sản phầm</option>
 												<option value="1">Blue Archive</option>
-												<option value="2"></option>
-												<option value="3"></option>
-												<option value="4"></option>
-												<option value="5"></option>
+												<option value="2">.</option>
+												<option value="3">.</option>
+												<option value="4">.</option>
+												<option value="5">.</option>
 										</div>
 									</div>
 									<div class="fi-headerSearch__keyword">
@@ -155,13 +156,13 @@
 								</div>
 							</div>
 							<div class="fi-headerRole__cart">
-								<div class="fi-cartNaviWarp">
+								<div class="fi-cartNaviWrap">
 									<div class="fi-cartNavi">
 										<i class="fi-cartNavi__icon fas fa-shopping-cart">
 											<span class="fi-cartNavi__badge">0</span>
 										</i>
 										<div class="fi-cartNavi_label">
-											<div class="ec-cartNavi__price">0đ</div>
+											<div class="fi-cartNavi__price">0đ</div>
 										</div>
 									</div>
 									<div class="fi-cartNaviNull">
@@ -178,12 +179,12 @@
 			</div>
 		</div>
 		<style>
-			@media screen and (max-width:500px) {
+			@media screen and (max-width:600px) {
 				.fi-headerTitle__title img {width:200px;}
 			}
 		</style>
 		<div class="fi-headerRole">
-			<div class="fi-headerRold__title">
+			<div class="fi-headerRole__title">
 				<div class="fi-headerTitle">
 					<div class="fi-headerTitle__title">
 						<h1>
@@ -199,15 +200,13 @@
             <div class="fi-layoutRole__main">
                 <div class="fi-sliderRole">
                     <div class="main_visual"> <!--slick slide sản phẩm-->
-                        <a></a>
-                        <a></a>
-                        <a></a>
-                        <a></a>
-                        <a></a>
+                        <a href="/product/placeholder1.html"><div class="item slick-slide"><img src="/Image/Banners/blue-panel.png"></div></a>
+                        <a href="/product/placeholder2.html"><div class="item slick-slide"><img src="/Image/Banners/green.jpg"></div></a>
+						<a><div class="item slick-slide"><img src="/Image/Banners/red.jpg"></div></a>
                     </div>
                 </div>
             </div>
-            <div class="fi-layoutRole__mainBottom"
+            <div class="fi-layoutRole__mainBottom"></div>
         </div>
 	</body>
 </html>
