@@ -3,15 +3,285 @@
 <head prefix = "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Lel Shop / Đâng ký</title>
+	<title>Lel Shop / Đăng ký</title>
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Lel Shop">
 	<link rel="icon" type="Image/png" href="Image/Logolel.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-    <link rel="stylesheet" href="Css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+	<link rel="stylesheet" href="Css/style.css">
 </head>
-<body id="page_registry" class="signup_page">
+<body id="page_signup" class="signup_page">
+	<div class = "fi-layoutRole">
+		<div class="fi-layoutRole__Header">
+			<div class="fi-headerNaviRole">
+				<!--Left Header-->
+				<div class="fi-headerNaviRole__left">
+					<!--Search Bar-->
+					<div class="fi-headerNaviRole__search">
+						<div class="fi-headerSearch">
+							<form>
+								<div class="fi-headerSearch__category">
+									<div class="fi-select fi-select_search">
+										<select name="category_id" class="category_id">
+											<option value="">Tất cả sản phầm</option>
+											<option value="1">Blue Archive</option>
+											<option value="2"></option>
+											<option value="3"></option>
+											<option value="4"></option>
+											<option value="5"></option>
+									</div>
+								</div>
+								<div class="fi-headerSearch__keyword">
+									<div class="fi-input">
+											<input type="search" name="name" maxlength="40" class="search-name" placeholder="Tìm kiếm" />
+											<button class="fi-headerSearch__keyword" type="submit">
+												<div class="fi-icon">
+													<img src="icon/search-dark.svg" alt="">
+												</div>
+											</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--End of Search Bar-->
+					<div class="fi-headerRole__navSP">
+						<div class="fi-headerNavSp">
+							<i class="fas fa-bars"></i>
+						</div>
+					</div>
+				</div>
+				<!--End of Left Header-->
+				<!--Right Header-->
+				<div class="fi-headerNaviRole__right">
+					<div class="fi-headerNaviRole__nav">
+						<div class="fi-headerNav">
+							<div class="fi-headerNav__item">
+								<a href="/signup.html">
+									<i class="fi-headerNav__itemIcon fas fa fa-user fa-fw"></i>
+									<span class="fi-headerNav__itemLink">Đăng ký thành viên</span>
+								</a>
+							</div>
+							<div class="fi-headerNav__item">
+								<a href="/login.html">
+									<i class="fi-headerNav__itemIcon fas fa-lock fa-fw"></i>
+									<span class="fi-headerNav__itemLink">Đăng nhập</span>
+								</a>
+							</div>
+							<div class="fi-headerNav__item">
+								<a href="/faq.html">
+									<i class="fi-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
+									<span class="fi-headerNav__itemLink">Hỗ trợ</span>
+								</a>
+							</div>
+						</div>
+						<div class="fi-headerRole__cart">
+							<div class="fi-cartNaviWarp">
+								<div class="fi-cartNavi">
+									<i class="fi-cartNavi__icon fas fa-shopping-cart">
+										<span class="fi-cartNavi__badge">0</span>
+									</i>
+									<div class="fi-cartNavi_label">
+										<div class="ec-cartNavi__price">0đ</div>
+									</div>
+								</div>
+								<div class="fi-cartNaviNull">
+									<div class="fi-cartNaviNull__mess">
+										<p>Không có sản phẩm trong giỏ của bạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End of Right Header-->
+			</div>
+			<style>
+				@media screen and (max-width:600px) {
+					.fi-headerTitle__title img {width:200px;}
+				}
+			</style>
+			<div class="fi-headerRole">
+				<div class="fi-headerRole__title">
+					<div class="fi-headerTitle">
+						<div class="fi-headerTitle__title">
+							<h1>
+								<a href="/index.html">
+									<img src="Image/Panel.png">
+								</a>    
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fi-layoutRole__Contents">
+			<div class="fi-layoutRole__main">
+				<div class="fi-signupRole">
+					<div class="fi-pageHeader">
+						<h1>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">Đăng ký thành viên mới</font>
+							</font>
+						</h1>
+					</div>
+
+					<div class="fi-signupForm">
+						<div class="fi-signupForm_cell">
+							<form method="post" novalidate class="signupForm">
+								<div class="fi-inputFields">
+									<!--Name-->
+									<dl> 
+										<dt>
+											<label class="fi-label required" for="entry_customer_name">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Họ và tên</font>
+												</font>
+											</label>
+											<span class="fi-required">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">*</font>
+												</font>
+											</span>
+										</dt>
+										<dd>
+											<style>
+											.ec-halfInput input[type='text'] {
+												margin-left: 15px;
+												width: 90%;
+											}                               
+											</style>
+											<div class="fi-halfInput">
+												<span style="width: 100%; float:left">
+													<input type="text" id="entry_customer_name" name="entry[customer_name]" required>
+												</span>
+											</div>
+										</dd>
+									</dl>
+									<!--Address-->
+									<dl>
+										<dt>
+											<label class="fi-label required" for="entry-email">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Địa chỉ</font>
+												</font>
+											</label>
+											<span class="fi-required">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">*</font>
+												</font>
+											</span>
+										</dt>
+										<dd>
+											<div class="fi-zipInput">
+												<span>
+													<font style="vertical-align: inherit;">
+														<font style="vertical-align: inherit;"> Postal Code</font>
+													</font>
+												</span>
+												<input type="tel" id="entry_postal_code" name="entry[postal_code]" required placeholder="000000"></input>
+												<div class="fi-zipInput_help">
+													<a href="https://rentapartment.vn/vietnam-zip-postal-code/" target="_blank">
+														<span>
+															<font style="vertical-align: inherit;">
+																<font style="vertical-align: inherit;">Tìm kiếm mã bưu điện</font>
+															</font>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="fi-select">
+												<select id="entry-address-pref" name="entry[address][pref]" required>
+													<option value selected>
+														<font style="vertical-align: inherit;">
+															<font style="vertical-align: inherit;">Tỉnh/Thành phố</font>
+														</font>
+													</option>
+												</select>
+											</div>
+											<div class="fi-input">
+												<input type="text" id="entry-address-line1" name="entry[address][line1]" required placeholder="Xã/Phường">
+											</div>
+											<div class="fi-input">
+												<input type="text" id="entry-address-line2" name="entry[address][line2]" placeholder="Số nhà, tên đường">
+											</div>
+										</dd>
+									</dl>
+									<!--Phone-->
+									<dl>
+										<dt>
+											<label class="fi-label required" for="entry_phone_number">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">Số điện thoại</font>
+													</font>
+												</font>
+											</label>
+											<span class="fi-required">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">*</font>
+												</font>
+											</span>
+										</dt>
+										<dd>
+											<div class="fi-phoneInput">
+												<input type="phone" id="entry_phone_number" name="entry[phone_number]" required placeholder="012345689">
+											</div>
+										</dd>
+									</dl>
+									<!--Email-->
+									<dl>
+										<dt>
+											<label class="fi-label required" for="entry_email">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Email</font>
+                                                    </font>
+                                                </font>
+                                            </label>
+                                            <span class="fi-required">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">*</font>
+                                                </font>
+                                            </span>	
+										</dt>
+										<dd>
+                                            <div class="fi-input">
+                                                <input type="text" id="entry_email" name="entry[email]" required placeholder="abcd@example.com" style="margin-bottom: 5px;">
+                                            </div>
+                                        </dd>
+									</dl>
+									<!--Password-->
+									<dl>
+										<dt>
+                                            <label class="fi-label required" for="entry_password">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Mật khẩu</font>
+                                                    </font>
+                                                </font>
+                                            </label>
+                                            <span class="fi-required">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">*</font>
+                                                </font>
+                                            </span>
+                                        </dt>
+                                        <dd>
+                                            <div class="fi-passwordInput">
+                                                <input type="password" id="entry_password_first" name="entry[password][first]" required placeholder="Mật khẩu 8 - 32 ký tự chữ và số" oncopy="return false">
+                                            </div>
+											<div class="fi-passwordInput">
+                                                <input type="password" id="entry_password_second" name="entry[password][second]" required placeholder="Xác nhận mật khẩu" onpaste="return false">
+                                            </div>
+                                        </dd>
+									</dl>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
