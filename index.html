@@ -190,11 +190,6 @@
 					</div>
 				</div>
 			</div>
-			<style>
-				@media screen and (max-width:600px) {
-					.fi-headerTitle__title img {width:200px;}
-				}
-			</style>
 			<div class="fi-layoutRole__contents">
 				<div class="fi-layoutRole__main">
 					<div class="fi-sliderRole">
@@ -206,6 +201,66 @@
 					</div>
 				</div>
 				<div class="fi-layoutRole__mainBottom"></div>
+			</div>
+		</div>
+		<style>
+			@font-face {
+		  		font-family: 'caveat';
+		  		src: url(font/Caveat-Regular.ttf);
+			}
+		
+			ul {
+		  		list-style: none;
+			}
+			.main-contents {
+		 		background: #ffffff;
+		  		font-family: "Noto Sans";
+				src: url(font/NotoSans-Regular.ttf);
+		  		font-size: 100%;
+		  		color: black;
+		  		line-height: 1.6;
+		  		height: 100%;
+		  		width: 1090px;
+		  		text-align: center;
+		  		position: relative;
+		  		margin: 20px auto 0 auto;
+			}
+			.fi-secHeading {
+				text-align: left;
+			}
+			.main-contents .show {
+			  	padding: 32px;
+			  	background: #f8f8f8;
+			}
+
+			.main-contents .show-content {
+			  	margin-top: 16px;
+			}
+			.main-contents .show-content ul {
+			  	display: flex;
+			  	justify-content: center;
+			  	flex-wrap: wrap;
+			}
+			.main-contents .show-content ul li {
+			  	flex-basis: calc(28% + 20px);
+			  	padding: 8px;
+			}
+			.main-contents .show-content ul li a img {
+			  	max-width: 100%;
+			  	height: auto;
+			}
+			.main-contents .show-content ul li a img:hover {
+			  	opacity: 0.7;
+			}
+		</style>
+
+		<div class="main-contents">
+			<div class="show">
+				<div class="fi-secHeading">
+					<span class="fi-secHeading__en">CATEGORY</span>
+					<span class="fi-secHeading__line"></span>
+					<span class="fi-secHeading__vi">Phân loại</span>
+				</div>
 			</div>
 		</div>
 	</body>

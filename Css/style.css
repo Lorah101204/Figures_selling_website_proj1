@@ -323,3 +323,22 @@ summary {
     width: 100%;
     max-width: 1130px;
     margin-bottom: 24px; }
+
+.fi-secHeading {
+    margin-bottom: 15px;
+    color: black; }
+.fi-secHeading .fi-secHeading__en {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .2em; }
+.fi-secHeading .fi-secHeading__line {
+    display: inline-block;
+    margin: 0 20px;
+    width: 1px;
+    height: 14px;
+    background: black; }
+.fi-secHeading .fi-secHeading__vi {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: .15em;
+    vertical-align: 2px; }
