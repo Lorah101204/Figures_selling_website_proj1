@@ -84,184 +84,1675 @@
 			}
 	
 			.slick-dots li button.thumbnail img {
-				width: 0;
-				height: 0;
+				width: 200px;
+				height: 200px;
 			}
 		</style>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 	</head>
-	<body id="page_homepage" class="front_page">
-		<div class = "fi-layoutRole">
-			<div class="fi-headerRole">
-				<div class="fi-headerNaviRole">
-					<!--Left Header-->
-					<div class="fi-headerNaviRole__left">
-						<!--Search Bar-->
-						<div class="fi-headerNaviRole__search">
-							<div class="fi-headerSearch">
-								<form>
-									<div class="fi-headerSearch__category">
-										<div class="fi-select fi-select_search">
-											<select name="category_id" class="category_id">
-												<option value="">Tất cả sản phầm</option>
-												<option value="1">Blue Archive</option>
-												<option value="2">.</option>
-												<option value="3">.</option>
-												<option value="4">.</option>
-												<option value="5">.</option>
-										</div>
-									</div>
-									<div class="fi-headerSearch__keyword">
-										<div class="fi-input">
-												<input type="search" name="name" maxlength="40" class="search-name" placeholder="Tìm kiếm" />
-												<button class="fi-headerSearch__keyword" type="submit">
-													<div class="fi-icon">
-														<img src="icon/search-dark.svg" alt="">
-													</div>
-												</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-						<!--End of Search Bar-->
-						<div class="fi-headerRole__navSP">
-							<div class="fi-headerNavSp">
-								<i class="fas fa-bars"></i>
-							</div>
-						</div>
-					</div>
-					<!--End of Left Header-->
-					<!--Right Header-->
-					<div class="fi-headerNaviRole__right">
-						<div class="fi-headerNaviRole__nav">
-							<div class="fi-headerNav">
-								<div class="fi-headerNav__item">
-									<a href="/signup.html">
-										<i class="fi-headerNav__itemIcon fas fa fa-user fa-fw"></i>
-										<span class="fi-headerNav__itemLink">Đăng ký thành viên</span>
-									</a>
-								</div>
-								<div class="fi-headerNav__item">
-									<a href="/login.html">
-										<i class="fi-headerNav__itemIcon fas fa-lock fa-fw"></i>
-										<span class="fi-headerNav__itemLink">Đăng nhập</span>
-									</a>
-								</div>
-								<div class="fi-headerNav__item">
-									<a href="/faq.html">
-										<i class="fi-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
-										<span class="fi-headerNav__itemLink">Hỗ trợ</span>
-									</a>
-								</div>
-							</div>
-							<div class="fi-headerRole__cart">
-								<div class="fi-cartNaviWrap">
-									<div class="fi-cartNavi">
-										<i class="fi-cartNavi__icon fas fa-shopping-cart">
-											<span class="fi-cartNavi__badge">0</span>
-										</i>
-										<div class="fi-cartNavi_label">
-											<div class="fi-cartNavi__price">0đ</div>
-										</div>
-									</div>
-									<div class="fi-cartNaviNull">
-										<div class="fi-cartNaviNull__mess">
-											<p>Không có sản phẩm trong giỏ của bạn</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--End of Right Header-->
-				</div>
-				<div class="fi-headerRole">
-					<div class="fi-headerRole__title">
-						<div class="fi-headerTitle">
-							<div class="fi-headerTitle__title">
-								<h1>
-									<a href="/index.html">
-										<img src="Image/Panel.png">
-									</a>    
-								</h1>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fi-layoutRole__contents">
-				<div class="fi-layoutRole__main">
-					<div class="fi-sliderRole">
-						<div class="main_visual"> <!--slick slide sản phẩm-->
-							<a href="/product/placeholder1.html"><div class="item slick-slide"><img src="/Image/Banners/blue-panel.png"></div></a>
-							<a href="/product/placeholder2.html"><div class="item slick-slide"><img src="/Image/Banners/green.jpg"></div></a>
-							<a><div class="item slick-slide"><img src="/Image/Banners/red.jpg"></div></a>
-						</div>
-					</div>
-				</div>
-				<div class="fi-layoutRole__mainBottom"></div>
-			</div>
-		</div>
-		<style>
-			@font-face {
-		  		font-family: "caveat";
-		  		src: url(font/Caveat-Regular.ttf);
-			}
+	<body>
+		<div class="ec-layoutRole">
+			<div class="ec-layoutRole__header">
+		<div class="ec-headerNaviRole">
+<div class="ec-headerNaviRole__left">
+	<div class="ec-headerNaviRole__search">
 		
-			ul {
-		  		list-style: none;
-			}
-			.main-contents {
-		 		background: #ffffff;
-				src: url(font/NotoSans-Regular.ttf);
-		  		font-size: 200%;
-		  		color: black;
-		  		line-height: 1.6;
-		  		height: 100%;
-		  		width: 1090px;
-		  		text-align: center;
-		  		position: relative;
-		  		margin: 20px auto 0 auto;
-			}
-			.fi-secHeading {
-				text-align: left;
-			}
-			.main-contents .show {
-			  	padding: 32px;
-			  	background: #f8f8f8;
-			}
+<div class="ec-headerSearch">
+<form method="get" class="searchform" action="">
+	<div class="ec-headerSearch__category">
+		<div class="ec-select ec-select_search">
+						<select name="category_id" class="category_id">
+							<option value="">全ての商品</option>
+							<option value="">タイトルから探す</option>
+							<option value="">　アズールレーン</option>
+							<option value="">　アークナイツ</option>
+							<option value="">　雀魂</option>
+							<option value="">　ブルーアーカイブ</option>
+							<option value="">　エーテルゲイザー</option>
+							<option value="">カテゴリから探す</option>
+							<option value="">　書籍・イラスト集</option>
+							<option value="">　映像・音楽・メディア</option>
+							<option value="">　缶バッジ・アクリル製品</option>
+							<option value="">　フィギュア・ぬいぐるみ</option>
+							<option value="">　タペストリー・ポスター</option>
+							<option value="">　ブロマイド・アルバム</option>
+							<option value="">　モバイル・ガジェット</option>
+							<option value="">　抱き枕カバー・インテリア</option>
+							<option value="">　アパレル・アクセサリー</option>
+							<option value="">　文具・デスク用品</option>
+							<option value="">　タオル・ハンカチ類</option>
+							<option value="">　キッチン用品・カトラリー</option>
+							<option value="">　食品・飲料</option>
+							<option value="">イベントから探す</option>
+							<option value="">　アズールレーン JR秋葉原駅店グッズ</option>
+							<option value="">　アークナイツドラマCD「風雪一過」</option>
+							<option value="">　アークナイツ × サンリオキャラクターズ</option>
+							<option value="">　ブルーアーカイブ The Animation 公式グッズ</option>
+							<option value="">　UNION ARENA</option>
+							<option value="">　アークナイツ 5th Anniversary Fes.「With You」事前通販</option>
+							<option value="">　アークナイツ JR秋葉原駅店グッズ</option>
+							<option value="">　伝統と格式のアズレンセット</option>
+							<option value="">　アズールレーン×マリオンクレープ</option>
+							<option value="">　ブルーアーカイブ JR秋葉原駅店グッズ</option>
+							<option value="">　ブルーアーカイブ 温泉コラボ</option>
+							<option value="">　アズールレーン7周年記念通販</option>
+							<option value="">　アークナイツ4.5周年記念</option>
+							<option value="">　アークナイツ合金重工シリーズ塗装済み完成品 ロドス・アイランド</option>
+							<option value="">　アズ旅 in沖縄 特別グッズ</option>
+							<option value="">　ハイスピードエトワール　パドックストーリーズ</option>
+							<option value="">　アズールレーン　共鳴のパッション</option>
+							<option value="">　エーテルゲイザー1st Anniv.記念通販</option>
+							<option value="">　ブルーアーカイブ The Animation Blu-ray</option>
+							<option value="">　HIGHSPEED Étoile Blu-ray</option>
+							<option value="">　購買部 in Yostar OFFICIAL SHOP</option>
+							<option value="">　アークナイツ【冬隠帰路/PERISH IN FROST】Blu-ray予約開始</option>
+							<option value="">　ブルーアーカイブ アクリルスタンド</option>
+							<option value="">　エーテルゲイザー リリース記念</option>
+							<option value="">　アークナイツ【黎明前奏/PRELUDE TO DAWN】</option>
+							<option value="">　空色ユーティリティ</option>
+						</select>
 
-			.main-contents .show-content {
-			  	margin-top: 16px;
-			}
-			.main-contents .show-content ul {
-			  	display: flex;
-			  	justify-content: center;
-			  	flex-wrap: wrap;
-			}
-			.main-contents .show-content ul li {
-			  	flex-basis: calc(28% + 20px);
-			  	padding: 8px;
-			}
-			.main-contents .show-content ul li a img {
-			  	max-width: 100%;
-			  	height: auto;
-			}
-			.main-contents .show-content ul li a img:hover {
-			  	opacity: 0.7;
-			}
-		</style>
-
-		<div class="main-contents">
-			<div class="show">
-				<div class="fi-secHeading">
-					<span class="fi-secHeading__en">CATEGORY</span>
-					<span class="fi-secHeading__line"></span>
-					<span class="fi-secHeading__vi">Phân loại</span>
-				</div>
-			</div>
 		</div>
-	</body>
+	</div>
+	<div class="ec-headerSearch__keyword">
+		<div class="ec-input">
+			<input type="search" name="name" maxlength="50" class="search-name" placeholder="キーワードを入力" />
+			<button class="ec-headerSearch__keywordBtn" type="submit">
+				<div class="ec-icon">
+					<img src="/icon/search-dark.svg" alt="">
+				</div>
+			</button>
+		</div>
+	</div>
+</form>
+</div>
+
+	</div>
+	<div class="ec-headerRole__navSP">
+		
+<div class="ec-headerNavSP">
+<i class="fas fa-bars"></i>
+</div>
+	</div>
+</div>
+<div class="ec-headerNaviRole__right">
+	<div class="ec-headerNaviRole__nav">
+		
+<div class="ec-headerNav">
+		<div class="ec-headerNav__item">
+		<a href="/login.html">
+			<i class="ec-headerNav__itemIcon fas fa-user fa-fw"></i>
+			<span class="ec-headerNav__itemLink">新規会員登録</span>
+		</a>
+	</div>
+				<div class="ec-headerNav__item">
+			<a href="https://shop.yostar.co.jp/mypage/favorite">
+				<i class="ec-headerNav__itemIcon fas fa-wifi fa-fw"></i>
+				<span class="ec-headerNav__itemLink">Live stream</span>
+			</a>
+		</div>
+			<div class="ec-headerNav__item">
+		<a href="https://shop.yostar.co.jp/mypage/login">
+			<i class="ec-headerNav__itemIcon fas fa-lock fa-fw"></i>
+			<span class="ec-headerNav__itemLink">ログイン</span>
+		</a>
+	</div>
+	<div class="ec-headerNav__item">
+	<a href="https://shop.yostar.co.jp/faq">
+		<i class="ec-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
+		<span class="ec-headerNav__itemLink">よくある質問</span>
+	</a>
+</div>
+</div>
+
+	</div>
+	<div class="ec-headerRole__cart">
+		<div class="ec-cartNaviWrap">
+<div class="ec-cartNavi">
+	<i class="ec-cartNavi__icon fas fa-shopping-cart">
+		<span class="ec-cartNavi__badge">0</span>
+	</i>
+	<div class="ec-cartNavi__label">
+		<div class="ec-cartNavi__price">0đ</div>
+	</div>
+</div>
+		<div class="ec-cartNaviNull">
+		<div class="ec-cartNaviNull__message">
+			<p>現在カート内に商品はございません。</p>
+		</div>
+	</div>
+</div>
+
+	</div>
+</div>
+</div>
+
+		<style>
+@media screen and (max-width:500px){
+
+.ec-headerTitle__title img {width:220px;}
+
+}
+</style>
+
+<div class="ec-headerRole">
+<div class="ec-headerRole__title">
+	<div class="ec-headerTitle">
+		<div class="ec-headerTitle__title">
+			<h1>
+				<a href="https://shop.yostar.co.jp/">
+											<img src="/html/user_data/assets/img/logo/2112_logo.png">
+				</a>
+			</h1>
+		</div>
+	</div>
+</div>
+</div>
+	<!-- ▲ロゴ -->
+<!-- ▼カテゴリナビ(PC) -->
+		
+
+
+
+<div class="ec-categoryNaviRole">
+<div class="ec-itemNav">
+	<ul class="ec-itemNav__nav">
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3Nzg=">
+		タイトルから探す
+	</a>
+
+		<ul>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3Nzk=">
+		アズールレーン
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3OTU=">
+		アークナイツ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NzU=">
+		雀魂
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTE=">
+		ブルーアーカイブ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODY=">
+		エーテルゲイザー
+	</a>
+
+
+			</li>
+				</ul>
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MjY=">
+		カテゴリから探す
+	</a>
+
+		<ul>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4Nzg=">
+		書籍・イラスト集
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MzE=">
+		映像・音楽・メディア
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NTk=">
+		缶バッジ・アクリル製品
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MDg=">
+		フィギュア・ぬいぐるみ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NDc=">
+		タペストリー・ポスター
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2OTk=">
+		ブロマイド・アルバム
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODM=">
+		モバイル・ガジェット
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTE=">
+		抱き枕カバー・インテリア
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njc=">
+		アパレル・アクセサリー
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MTU=">
+		文具・デスク用品
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MzA=">
+		タオル・ハンカチ類
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjM=">
+		キッチン用品・カトラリー
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODI=">
+		食品・飲料
+	</a>
+
+
+			</li>
+				</ul>
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTA=">
+		イベントから探す
+	</a>
+
+		<ul>
+						<li>
+													
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDE=">
+		アズールレーン JR秋葉原駅店グッズ
+	</a>
+
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NTA=">
+		アークナイツドラマCD「風雪一過」
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4ODI=">
+		アークナイツ × サンリオキャラクターズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MzQ=">
+		ブルーアーカイブ The Animation 公式グッズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NzA=">
+		UNION ARENA
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MTc=">
+		アークナイツ 5th Anniversary Fes.「With You」事前通販
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODU=">
+		アークナイツ JR秋葉原駅店グッズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NjY=">
+		伝統と格式のアズレンセット
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODY=">
+		アズールレーン×マリオンクレープ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTM=">
+		ブルーアーカイブ JR秋葉原駅店グッズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MTU=">
+		ブルーアーカイブ 温泉コラボ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjU=">
+		アズールレーン7周年記念通販
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NDk=">
+		アークナイツ4.5周年記念
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njk=">
+		アークナイツ合金重工シリーズ塗装済み完成品 ロドス・アイランド
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTM=">
+		アズ旅 in沖縄 特別グッズ
+	</a>
+
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODE=">
+		ハイスピードエトワール　パドックストーリーズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3OTc=">
+		アズールレーン　共鳴のパッション
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MTM=">
+		エーテルゲイザー1st Anniv.記念通販
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjQ=">
+		ブルーアーカイブ The Animation Blu-ray
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njg=">
+		HIGHSPEED Étoile Blu-ray
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NzY=">
+		購買部 in Yostar OFFICIAL SHOP
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTU=">
+		アークナイツ【冬隠帰路/PERISH IN FROST】Blu-ray予約開始
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODM=">
+		ブルーアーカイブ アクリルスタンド
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDI=">
+		エーテルゲイザー リリース記念
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NDE=">
+		アークナイツ【黎明前奏/PRELUDE TO DAWN】
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NDI=">
+		空色ユーティリティ
+	</a>
+
+
+			</li>
+				</ul>
+
+			</li>
+				</ul>
+</div>
+</div>
+
+	<!-- ▲カテゴリナビ(PC) -->
+
+	</div>
+
+	
+<div class="ec-layoutRole__contents">
+			
+			
+	<div class="ec-layoutRole__main">
+					
+						<div class="ec-sliderRole">
+	<div class="main_visual">
+
+		<!--href:"product"-->
+		<a href=""><div class="item slick-slide"><img src=""></div></a>  
+		<a href=""><div class="item slick-slide"><img src=""></div></a> 
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+	　  <a href=""><div class="item slick-slide"><img src=""></div></a>     
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+	　  <a href=""><div class="item slick-slide"><img src=""></div></a>    
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>         
+		<a href=""><div class="item slick-slide"><img src=""></div></a>     
+		<a href=""><div class="item slick-slide"><img src=""></div></a>     
+		<a href=""><div class="item slick-slide"><img src=""></div></a>      
+		<a href=""><div class="item slick-slide"><img src=""></div></a>     
+		<a href=""><div class="item slick-slide"><img src=""></div></a>  
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+		<a href=""><div class="item slick-slide"><img src=""></div></a>
+	</div>
+</div>
+
+									<div class="ec-layoutRole__mainBottom">
+					<!-- ▼カテゴリ -->
+		
+<style>
+@font-face {
+font-family: 'caveat';
+src: url(font/caveat.ttf);
+}
+
+ul {
+list-style: none;
+}
+.main-contents38 {
+background: #ffffff;
+font-family: "Noto Sans Japanese";
+font-size: 100%;
+color: black;
+line-height: 1.6;
+height: 100%;
+width: 1090px;
+text-align: center;
+position: relative;
+margin: 20px auto 0 auto;
+}
+.ec-secHeading {
+text-align: left;
+}
+.main-contents38 .show {
+padding: 32px;
+background: #f8f8f8;
+}
+
+.main-contents38 .show-content {
+margin-top: 16px;
+}
+.main-contents38 .show-content ul {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.main-contents38 .show-content ul li {
+flex-basis: calc(28% + 20px);
+padding: 8px;
+}
+.main-contents38 .show-content ul li a img {
+max-width: 100%;
+height: auto;
+}
+.main-contents38 .show-content ul li a img:hover {
+opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+.main-contents38 {
+	width: 100%;
+}
+
+.main-contents38 .show-content ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.main-contents38 .show-content ul li {
+	flex-basis: calc(50% - 8px);
+	padding: 8px 0;
+}
+
+.ec-secHeading__en {
+	font-size: 1.1rem;
+}
+
+.ec-secHeading__line {
+	margin: 0 10px !important;
+}
+
+.ec-secHeading__ja {
+	font-size: 0.9rem;
+}
+}
+
+</style>
+
+
+
+<div class="main-contents38">
+	<div class="show">
+		<div class="ec-secHeading">
+			<span class="ec-secHeading__en">CATEGORY</span>
+			<span class="ec-secHeading__line"></span>
+			<span class="ec-secHeading__ja">カテゴリ</span>
+		</div>
+		<div class="show-content">
+			<ul>
+				<li>
+					<a href="./products/list?category_id=MTExODQ3Nzk=">
+						<img src="/html/user_data/assets/img/top_category/38-01.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="./products/list?category_id=MTExODQ3OTU=">
+						<img src="/html/user_data/assets/img/top_category/38-02.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="./products/list?category_id=MTExODQ4NzU=">
+						<img src="/html/user_data/assets/img/top_category/38-03.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="./products/list?category_id=MTExODQ4OTE=">
+						<img src="/html/user_data/assets/img/top_category/38-04.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="./products/list?category_id=MTExODQ2ODY=">
+						<img src="/html/user_data/assets/img/top_category/38-06.jpg" alt="">
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+		
+<style>
+.ec-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.ec-secHeading {
+	margin-bottom: 0;
+}
+
+.more {
+	text-decoration: none;
+	padding: 10px 16px;
+	background: #000000;
+	color: #ffffff;
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
+.more:hover {
+	opacity: 0.7;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.ec-shelfRole {
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+	.ec-secHeading__en {
+		font-size: 1.1rem;
+	}
+	
+	.ec-secHeading__line {
+		margin: 0 10px !important;
+	}
+	
+	.ec-secHeading__ja {
+		font-size: 0.9rem;
+	}
+	
+	.more {
+		padding: 5px 8px;
+		font-size: 0.8rem;
+	}
+}
+</style>
+
+<!-- ▼item_list▼ -->
+<div class="ec-role">
+<div class="ec-newsRole">
+	<div class="ec-head">
+		<div class="ec-secHeading">
+			<span class="ec-secHeading__en">RECOMMEND</span>
+			<span class="ec-secHeading__line"></span>
+			<span class="ec-secHeading__ja">おすすめ商品</span>
+		</div>
+				</div>
+	<div class="ec-shelfRole">
+		<ul class="ec-shelfGrid">
+								<li class="ec-shelfGrid__item">
+					<a href="https://shop.yostar.co.jp/products/detail/1791">
+						<img src="https://shopimages.yostar.co.jp/1001165740_66fbab7414bf8.png">
+						<p>&nbsp;</p>
+						<dl>
+							<dt class="item_name">アズールレーン × 白龍 純米大吟醸  7周年記念限定パッケージ</dt>
+							<dd class="item_price">
+																		￥3,960
+																</dd>
+						</dl>
+					</a>
+				</li>
+								<li class="ec-shelfGrid__item">
+					<a href="https://shop.yostar.co.jp/products/detail/1321">
+						<img src="https://shopimages.yostar.co.jp/0424122246_66287b062589d.jpg">
+						<p>&nbsp;</p>
+						<dl>
+							<dt class="item_name">デスクマット バレンタイン記念イラスト ver.</dt>
+							<dd class="item_price">
+																		￥1,980
+																</dd>
+						</dl>
+					</a>
+				</li>
+								<li class="ec-shelfGrid__item">
+					<a href="https://shop.yostar.co.jp/products/detail/840">
+						<img src="https://shopimages.yostar.co.jp/1003121112_651b8650647a0.jpg">
+						<p>&nbsp;</p>
+						<dl>
+							<dt class="item_name">アークナイツ【冬隠帰路/PERISH IN FROST】Blu-ray BOX 数量限定生産版</dt>
+							<dd class="item_price">
+																		￥28,600
+																</dd>
+						</dl>
+					</a>
+				</li>
+								<li class="ec-shelfGrid__item">
+					<a href="https://shop.yostar.co.jp/products/detail/552">
+						<img src="https://shopimages.yostar.co.jp/0327171000_64214f58a61f4.jpg">
+						<p>&nbsp;</p>
+						<dl>
+							<dt class="item_name">OVA アズールレーン Queen&#039;s Orders</dt>
+							<dd class="item_price">
+																		￥9,900
+																</dd>
+						</dl>
+					</a>
+				</li>
+						</ul>
+	</div>
+</div>
+</div>
+<!-- ▲item_list▲ -->
+	<!-- ▲おすすめ商品 -->
+<!-- ▼特集トピックス -->
+		<style>
+@font-face {
+font-family: 'caveat';
+src: url(font/caveat.ttf);
+}
+
+.main-contents39 {
+background: #ffffff;
+font-family: "Noto Sans Japanese";
+font-size: 100%;
+line-height: 1.6;
+color: #716969;
+height: 100%;
+text-align: center;
+position: relative;
+width: 1090px;
+margin: 0 auto;
+}
+.main-contents39 .show {
+padding: 32px;
+background: #F8F8F8;
+}
+
+.ec-secHeading {
+text-align: left;
+}
+
+.main-contents39 .show .content {
+margin-top: 16px;
+}
+.main-contents39 .show .content .showView {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.main-contents39 .show .content .showView li {
+flex-basis: calc(50% - 0px);
+padding: 8px;
+}
+.main-contents39 .show .content .showView li img {
+max-width: 100%;
+height: auto;
+}
+.main-contents39 .show .content .showView li img:hover {
+opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+.main-contents39 {
+	width: 100%;
+}
+
+
+.main-contents39 .show .content .showView {
+	flex-direction: column;
+}
+
+.main-contents39 .show .content .li {
+	flex-basis: 100%;
+}
+.ec-secHeading__en {
+	font-size: 1.1rem;
+}
+
+.ec-secHeading__line {
+	margin: 0 10px !important;
+}
+
+.ec-secHeading__ja {
+	font-size: 0.9rem;
+}
+}
+</style>
+
+<div class="main-contents39">
+	<div class="show">
+		<div class="ec-secHeading">
+			<span class="ec-secHeading__en">TOPICS</span>
+			<span class="ec-secHeading__line"></span>
+			<span class="ec-secHeading__ja">特集</span>
+		</div>
+		<div class="content">
+			<ul class="showView">
+
+
+			 <li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDE%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241125_az_eki3.jpg" alt="">
+					</a>
+				</li>
+
+			 <li>
+			   <a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODM%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241121__ba_akst20.jpg" alt="">
+					</a>
+				</li>
+				
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NTA%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241114_ark_dramacd3.jpg" alt="">
+					</a>
+				</li>
+				
+				
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MTc%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241026_5th_jizen.jpg" alt="">
+					</a>
+				</li>
+
+
+				 <li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MzQ%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241030_ba_anime.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjQ%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240420_ba_bluray.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4ODI%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241031_ark_sanrio.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODU%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241025_ark_akibaeki2.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTE%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20241024_ba_10akst.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NjY%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20241011_az_set_vol03.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NzA%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20241028_ark_union_arena.jpg" alt="">
+					</a>
+				</li>
+
+
+				<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTM%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20241007_ba_akihabara02.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MTM%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240521_AG_1st.png" alt="">
+					</a>
+				</li>
+
+			 <li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDE%3D">
+						<img src="/html/user_data/assets/img/top_topic/img_bnr_20240930_az_akihabara02.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjU%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240908_az_7th.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NDk%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240728_ark_4_5th.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njk%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240728_ark_rhodes_island.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+					<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NzY%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240219_ark_koubai.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTM%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20240719_azutabi_jigo.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDI%3D">
+					<img src="/html/user_data/assets/img/top_topic/topics05.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+				<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTU%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_20231007_ak_bdbox.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+					<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NDE%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_anime_arknight01.jpg" alt="">
+					</a>
+				</li>
+
+			<li>
+					<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NDI%3D">
+					<img src="/html/user_data/assets/img/top_topic/img_bnr_sorairo_utility.jpg" alt="">
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+	<!-- ▲特集トピックス -->
+<!-- ▼新着情報 -->
+		
+<script>
+	$(function() {
+		$('.ec-newsRole__news').each(function() {
+			var listLength = $(this).find('.ec-newsRole__newsItem').length;
+			if (listLength > 5) {
+				$(this).find('.ec-newsRole__newsItem:gt(4)').each(function() {
+					$(this).hide();
+				});
+				$(this).append('<a id="news_readmore" class="ec-inlineBtn--top">more</a>');
+				var dispNum = 5;
+				$(this).find('#news_readmore').click(function() {
+					dispNum += 5;
+					$(this).parent().find('.ec-newsRole__newsItem:lt(' + dispNum + ')').show();
+					if (dispNum >= listLength) {
+						$(this).hide();
+					}
+				})
+			}
+		});
+
+		$('.ec-newsRole__newsHeading').on('click', function() {
+			$newsItem = $(this).parent('.ec-newsRole__newsItem');
+			$newsDescription = $newsItem.children('.ec-newsRole__newsDescription');
+			if ($newsDescription.css('display') == 'none') {
+				$newsItem.addClass('is_active');
+				$newsDescription.slideDown(300);
+			} else {
+				$newsItem.removeClass('is_active');
+				$newsDescription.slideUp(300);
+			}
+			return false;
+		});
+	});
+</script>
+<div class="ec-role" id="news">
+<div class="ec-newsRole">
+	<div class="ec-secHeading">
+		<span class="ec-secHeading__en">NEWS</span>
+		<span class="ec-secHeading__line"></span>
+		<span class="ec-secHeading__ja">
+							お知らせ
+		</span>
+	</div>
+	<br>
+																																																												</div>
+<div style="font-size: 14px;">
+	
+<script src="/plugin/tabacms/assets/script.js"></script>
+<link rel="stylesheet" href="/plugin/tabacms/assets/style.css">
+
+<div class="row">
+<div class="col-xs-12">
+	<ul class="tabacms_post_list">
+						<li class="row">
+				<div class="col-md-3">
+						<time>2024/11/15</time>
+														<label class="text-nowrap tabacms_category_news_notice" style="border:solid 1px #ff0000;background-color:#ffffff;color:#ff0000;">重要なお知らせ</label>
+											</div>
+				<div class="col-md-9">
+												<a href="/news/news_20241115"><strong>物流量の増加によるお届け遅延のお知らせとお詫び</strong></a>
+										</div>
+			</li>
+						<li class="row">
+				<div class="col-md-3">
+						<time>2024/11/13</time>
+														<label class="text-nowrap tabacms_category_news_system" style="border:solid 1px #cccccc;background-color:#ffffff;color:#cccccc;">システムメンテナンス</label>
+											</div>
+				<div class="col-md-9">
+												<a href="/news/news_20241113"><strong>システムメンテナンスに伴うサイト一時休止のお知らせ</strong></a>
+										</div>
+			</li>
+						<li class="row">
+				<div class="col-md-3">
+						<time>2024/10/30</time>
+														<label class="text-nowrap tabacms_category_news_info" style="border:solid 1px #5cb1b1;background-color:#ffffff;color:#5cb1b1;">お知らせ</label>
+											</div>
+				<div class="col-md-9">
+												<a href="/news/news_20241030"><strong>自然災害による配送への影響について</strong></a>
+										</div>
+			</li>
+						<li class="row">
+				<div class="col-md-3">
+						<time>2024/10/15</time>
+														<label class="text-nowrap tabacms_category_news_notice" style="border:solid 1px #ff0000;background-color:#ffffff;color:#ff0000;">重要なお知らせ</label>
+											</div>
+				<div class="col-md-9">
+												<a href="/news/news_20241015"><strong>【重要】利用規約・特定商取引法　改訂のお知らせ</strong></a>
+										</div>
+			</li>
+						<li class="row">
+				<div class="col-md-3">
+						<time>2024/09/17</time>
+														<label class="text-nowrap tabacms_category_news_notice" style="border:solid 1px #ff0000;background-color:#ffffff;color:#ff0000;">重要なお知らせ</label>
+											</div>
+				<div class="col-md-9">
+												<a href="/news/news_20240917"><strong>【重要】利用規約・プライバシーポリシー・特定商取引法　改訂のお知らせ</strong></a>
+										</div>
+			</li>
+				</ul>
+</div>
+<div class="col-xs-12">
+	<a href="/news" class="pull-right">＞ 新着情報一覧</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+	<!-- ▲新着情報 -->
+
+			</div>
+				</div>
+
+				</div>
+
+	
+			<div class="ec-layoutRole__footer">
+			<!-- ▼フッター -->
+		<div class="ec-footerRole">
+<div class="ec-footerRole__inner">
+	<ul class="ec-footerNavi">
+		<li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/help/about">当サイトについて</a>
+		</li>
+		<li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/guide">初めての方へ</a>
+		</li>
+		 <li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/help/agreement">利用規約</a>
+		</li>
+		<li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/help/privacy">プライバシーポリシー</a>
+		</li>
+		<li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/help/tradelaw">特定商取引法に基づく表記</a>
+		</li>
+		<li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/faq">よくある質問</a>
+		</li>
+		<li class="ec-footerNavi__link">
+			<a href="https://shop.yostar.co.jp/contact">お問い合わせ</a>
+		</li>
+	</ul>
+	<div class="ec-footerTitle">
+		<div class="ec-footerTitle__logo">
+			<a href="https://shop.yostar.co.jp/">
+								<img src="/html/user_data/assets/img/logo/2112_logo-WT.png" style="width:300px">
+				</a>
+		</div>
+		<div class="ec-footerTitle__copyright">copyright &copy; Yostar OFFICIAL SHOP all rights reserved.</div>
+	</div>
+</div>
+</div>
+	<!-- ▲フッター -->
+
+	</div>
+</div><!-- ec-layoutRole -->
+
+<div class="ec-overlayRole"></div>
+<div class="ec-drawerRoleClose"><i class="fas fa-times"></i></div>
+<div class="ec-drawerRole">
+				<!-- ▼商品検索 -->
+		
+<div class="ec-headerSearch">
+<form method="get" class="searchform" action="/products/list">
+	<div class="ec-headerSearch__category">
+		<div class="ec-select ec-select_search">
+						<select name="category_id" class="category_id"><option value="">全ての商品</option><option value="MTExODQ3Nzg=">タイトルから探す</option><option value="MTExODQ3Nzk=">　アズールレーン</option><option value="MTExODQ3OTU=">　アークナイツ</option><option value="MTExODQ4NzU=">　雀魂</option><option value="MTExODQ4OTE=">　ブルーアーカイブ</option><option value="MTExODQ2ODY=">　エーテルゲイザー</option><option value="MTExODQ4MjY=">カテゴリから探す</option><option value="MTExODQ4Nzg=">　書籍・イラスト集</option><option value="MTExODQ3MzE=">　映像・音楽・メディア</option><option value="MTExODQ4NTk=">　缶バッジ・アクリル製品</option><option value="MTExODQ4MDg=">　フィギュア・ぬいぐるみ</option><option value="MTExODQ3NDc=">　タペストリー・ポスター</option><option value="MTExODQ2OTk=">　ブロマイド・アルバム</option><option value="MTExODQ2ODM=">　モバイル・ガジェット</option><option value="MTExODQ2NTE=">　抱き枕カバー・インテリア</option><option value="MTExODQ2Njc=">　アパレル・アクセサリー</option><option value="MTExODQ3MTU=">　文具・デスク用品</option><option value="MTExODQ4MzA=">　タオル・ハンカチ類</option><option value="MTExODQ3NjM=">　キッチン用品・カトラリー</option><option value="MTExODQ3ODI=">　食品・飲料</option><option value="MTExODQ4OTA=">イベントから探す</option><option value="MTExODQ3MDE=">　アズールレーン JR秋葉原駅店グッズ</option><option value="MTExODQ4NTA=">　アークナイツドラマCD「風雪一過」</option><option value="MTExODQ4ODI=">　アークナイツ × サンリオキャラクターズ</option><option value="MTExODQ4MzQ=">　ブルーアーカイブ The Animation 公式グッズ</option><option value="MTExODQ3NzA=">　UNION ARENA</option><option value="MTExODQ3MTc=">　アークナイツ 5th Anniversary Fes.「With You」事前通販</option><option value="MTExODQ2ODU=">　アークナイツ JR秋葉原駅店グッズ</option><option value="MTExODQ4NjY=">　伝統と格式のアズレンセット</option><option value="MTExODQ3ODY=">　アズールレーン×マリオンクレープ</option><option value="MTExODQ4OTM=">　ブルーアーカイブ JR秋葉原駅店グッズ</option><option value="MTExODQ4MTU=">　ブルーアーカイブ 温泉コラボ</option><option value="MTExODQ3NjU=">　アズールレーン7周年記念通販</option><option value="MTExODQ3NDk=">　アークナイツ4.5周年記念</option><option value="MTExODQ2Njk=">　アークナイツ合金重工シリーズ塗装済み完成品 ロドス・アイランド</option><option value="MTExODQ2NTM=">　アズ旅 in沖縄 特別グッズ</option><option value="MTExODQ3ODE=">　ハイスピードエトワール　パドックストーリーズ</option><option value="MTExODQ3OTc=">　アズールレーン　共鳴のパッション</option><option value="MTExODQ4MTM=">　エーテルゲイザー1st Anniv.記念通販</option><option value="MTExODQ3NjQ=">　ブルーアーカイブ The Animation Blu-ray</option><option value="MTExODQ2Njg=">　HIGHSPEED Étoile Blu-ray</option><option value="MTExODQ4NzY=">　購買部 in Yostar OFFICIAL SHOP</option><option value="MTExODQ2NTU=">　アークナイツ【冬隠帰路/PERISH IN FROST】Blu-ray予約開始</option><option value="MTExODQ3ODM=">　ブルーアーカイブ アクリルスタンド</option><option value="MTExODQ3MDI=">　エーテルゲイザー リリース記念</option><option value="MTExODQ4NDE=">　アークナイツ【黎明前奏/PRELUDE TO DAWN】</option><option value="MTExODQ4NDI=">　空色ユーティリティ</option></select>
+
+		</div>
+	</div>
+	<div class="ec-headerSearch__keyword">
+		<div class="ec-input">
+			<input type="search" name="name" maxlength="50" class="search-name" placeholder="キーワードを入力" />
+			<button class="ec-headerSearch__keywordBtn" type="submit">
+				<div class="ec-icon">
+					<img src="/html/template/default/assets/icon/search-dark.svg" alt="">
+				</div>
+			</button>
+		</div>
+	</div>
+</form>
+</div>
+
+	<!-- ▲商品検索 -->
+<!-- ▼カテゴリナビ(SP) -->
+		
+
+<div class="ec-headerCategoryArea">
+<div class="ec-headerCategoryArea__heading">
+	<p>カテゴリ一覧</p>
+</div>
+<div class="ec-itemNav">
+	<ul class="ec-itemNav__nav">
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3Nzg=">
+		タイトルから探す
+	</a>
+
+		<ul>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3Nzk=">
+		アズールレーン
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3OTU=">
+		アークナイツ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NzU=">
+		雀魂
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTE=">
+		ブルーアーカイブ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODY=">
+		エーテルゲイザー
+	</a>
+
+
+			</li>
+				</ul>
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MjY=">
+		カテゴリから探す
+	</a>
+
+		<ul>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4Nzg=">
+		書籍・イラスト集
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MzE=">
+		映像・音楽・メディア
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NTk=">
+		缶バッジ・アクリル製品
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MDg=">
+		フィギュア・ぬいぐるみ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NDc=">
+		タペストリー・ポスター
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2OTk=">
+		ブロマイド・アルバム
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODM=">
+		モバイル・ガジェット
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTE=">
+		抱き枕カバー・インテリア
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njc=">
+		アパレル・アクセサリー
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MTU=">
+		文具・デスク用品
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MzA=">
+		タオル・ハンカチ類
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjM=">
+		キッチン用品・カトラリー
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODI=">
+		食品・飲料
+	</a>
+
+
+			</li>
+				</ul>
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTA=">
+		イベントから探す
+	</a>
+
+		<ul>
+						<li>
+													
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDE=">
+		アズールレーン JR秋葉原駅店グッズ
+	</a>
+
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NTA=">
+		アークナイツドラマCD「風雪一過」
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4ODI=">
+		アークナイツ × サンリオキャラクターズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MzQ=">
+		ブルーアーカイブ The Animation 公式グッズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NzA=">
+		UNION ARENA
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MTc=">
+		アークナイツ 5th Anniversary Fes.「With You」事前通販
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2ODU=">
+		アークナイツ JR秋葉原駅店グッズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NjY=">
+		伝統と格式のアズレンセット
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODY=">
+		アズールレーン×マリオンクレープ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTM=">
+		ブルーアーカイブ JR秋葉原駅店グッズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MTU=">
+		ブルーアーカイブ 温泉コラボ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjU=">
+		アズールレーン7周年記念通販
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NDk=">
+		アークナイツ4.5周年記念
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njk=">
+		アークナイツ合金重工シリーズ塗装済み完成品 ロドス・アイランド
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTM=">
+		アズ旅 in沖縄 特別グッズ
+	</a>
+
+
+			</li>
+						<li>
+													
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODE=">
+		ハイスピードエトワール　パドックストーリーズ
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3OTc=">
+		アズールレーン　共鳴のパッション
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4MTM=">
+		エーテルゲイザー1st Anniv.記念通販
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3NjQ=">
+		ブルーアーカイブ The Animation Blu-ray
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2Njg=">
+		HIGHSPEED Étoile Blu-ray
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NzY=">
+		購買部 in Yostar OFFICIAL SHOP
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ2NTU=">
+		アークナイツ【冬隠帰路/PERISH IN FROST】Blu-ray予約開始
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3ODM=">
+		ブルーアーカイブ アクリルスタンド
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3MDI=">
+		エーテルゲイザー リリース記念
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NDE=">
+		アークナイツ【黎明前奏/PRELUDE TO DAWN】
+	</a>
+
+
+			</li>
+						<li>
+								<a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4NDI=">
+		空色ユーティリティ
+	</a>
+
+
+			</li>
+				</ul>
+
+			</li>
+				</ul>
+</div>
+</div>
+
+		
+<div class="ec-headerLinkArea">
+<div class="ec-headerLink__list">
+	<a class="ec-headerLink__item" href="">
+		<div class="ec-headerLink__icon">
+			<i class="fas fa-shopping-cart fa-fw"></i>
+		</div>
+		<span>カートを見る</span>
+	</a>
+				<a class="ec-headerLink__item" href="">
+			<div class="ec-headerLink__icon">
+				<i class="fas fa-user fa-fw"></i>
+			</div>
+			<span>新規会員登録</span>
+		</a>
+						<a class="ec-headerLink__item" href="">
+				<div class="ec-headerLink__icon">
+					<i class="fas fa-heart fa-fw"></i>
+				</div>
+				<span>お気に入り</span>
+			</a>
+					<a class="ec-headerLink__item" href="">
+			<div class="ec-headerLink__icon">
+				<i class="fas fa-lock fa-fw"></i>
+			</div>
+			<span>ログイン</span>
+		</a>
+			<a class="ec-headerLink__item" href="">
+		<div class="ec-headerLink__icon">
+			<i class="fas fa-home fa-fw"></i>
+		</div>
+		<span>ホームに戻る</span>
+	</a>
+</div>
+</div>
+
+
+</div>
+<div class="ec-blockTopBtn pagetop">ページトップへ</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+var eccube_lang = {
+'common.delete_confirm': "削除してもよろしいですか?",
+'front.product.out_of_stock': "ただいま品切れ中です。",
+};
+</script>
+<script src="/html/template/default/assets/js/function.js"></script>
+<script src="/html/template/default/assets/js/eccube.js"></script>
+<script>
+	$(function() {
+		$('.main_visual').slick({
+			dots: true,
+			arrows: false,
+			autoplay: true,
+			speed: 300
+		});
+	});
+</script>
+</body>
 </html>
 
+	</body>
