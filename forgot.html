@@ -300,55 +300,49 @@
 <div class="ec-layoutRole__contents">
                 
                 
-	<div class="ec-layoutRole__main">
-					
-						<div class="ec-role">
-	<div class="ec-pageHeader">
-		<h1>Đăng nhập</h1>
-	</div>
-	<div class="ec-off2Grid">
-		<div class="ec-off2Grid__cell">
-			<form name="login_mypage" id="login_mypage" method="post" action="/login.html">
-									<div class="ec-login">
-					<div class="ec-login__icon">
-						<div class="ec-icon"><img src="icon/user.svg" alt=""></div>
-					</div>
-					<div class="ec-login__input">
-						<div class="ec-input">
-							<input type="email" id="login_email" name="login_email" required="required" maxlength="255" style="ime-mode: disabled;" placeholder="Email" autofocus="autofocus" class="form-control" />
-							<input type="password" id="login_pass" name="login_pass" required="required" maxlength="255" placeholder="Mật khẩu" class="form-control" />
-						</div>
-													<div class="ec-checkbox">
-							<label>
-																		<div class="form-check">        <input type="checkbox" id="login_memory" name="login_memory" class="form-check-input" value="1" />
-	<label class="form-check-label" for="login_memory">Nhớ đăng nhập</label></div>
-																</label>
-						</div>
-																										</div>
-					<div class="ec-grid2">
-						<div class="ec-grid2__cell">
-							<div class="ec-login__actions">
-								<button type="submit"
-										class="ec-blockBtn--cancel">Xác nhận</button>
-							</div>
-						</div>
-						<div class="ec-grid2__cell">
-							<div class="ec-login__link"><a class="ec-link"
-														   href="/forgot.html">Quên mật khẩu?</a>
-							</div>
-							<div class="ec-login__link"><a class="ec-link"
-														   href="/signup.html">Đăng ký thành viên mới</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+    <div class="ec-layoutRole__main">
+                    
+                        <div class="ec-role">
+    <div class="ec-pageHeader">
+        <h1>Cấp lại mật khẩu</h1>
+    </div>
 </div>
-							</div>
+<div class="ec-forgotRole">
+    <form name="form1" id="form1" method="post" action="/forgot.html">
+        <div class="ec-off1Grid">
+            <div class="ec-off1Grid__cell">
+                <div class="ec-forgotRole__form">
+                    <div class="ec-forgotRole__intro">
+                        <p class="ec-para-normal">Vui lòng nhập địa chỉ email của bạn</p>
+                        <p class="ec-para-normal"></p>
+                    </div>
+                    <div class="ec-borderedDefs">
+                        <dl>
+                            <dt>
+                                <label class="ec-label required" for="login_email">Email</label><span class="ec-required">Bắt buộc</span>
+                            </dt>
+                            <dd>
+                                <div class="ec-input">
+                                    <input type="email"  id="login_email" name="login_email" required="required" maxlength="255" />
+                                    
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ec-off4Grid">
+            <div class="ec-off4Grid__cell">
+                <button type="submit" class="ec-blockBtn--action">Xác nhận</button>
+            </div>
+        </div>
+    </form>
+</div>
 
-				</div>
+                            </div>
+
+                </div>
 
 				<div class="ec-layoutRole__footer">
 					<!-- ▼フッター -->
