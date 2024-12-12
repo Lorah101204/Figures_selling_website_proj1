@@ -1,52 +1,41 @@
-import mysql from 'mysql2'
+const express = require('express')
+const app = express();
+const PORT = 3000;
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const mongoose = require('mongoose');
 
-import dotenv from 'dotenv'
-dotenv.config()
+require('dotenv/config');
+const api = process.env.API_URL;
 
-const connection = mysql.createConnection({
-	host: process.env.MY_HOST,
-	user: process.env.MY_USER,
-	password: process.env.MY_PASSWORD,
-	database: process.env.MY_DB
-}).promise();
+const productsRouter = require('./routers/products')
+const usersRouter = require('./routers/users')
+const itemsRouter = require('./routers/items')
+const ordersRouter = require('./routers/orders')
+const categoriesRouter = require('./routers/categories')
 
-connection.connect(err => {
-	if (err) throw err;
-	console.log('Connected successfully');
+//middleware
+app.use(bodyParser.json());
+app.use(morgan('tiny'));
+app.use(`${api}/users`, usersRouter);
+/*
+app.get('/', (req, res) => {
+	res.send('Hello API!');
 });
+*/
+const Product = require('./models/product')
 
-async function getCurrentUserCount() {
-	let data = await connection.query("SELECT COUNT(id) FROM users");
-	let currentUserCount = data[0][0]['COUNT(id)'];
+mongoose.connect(process.env.CONNECTION, {
+	dbName: 'store'
+})
+.then(() => {
+	console.log('Db connected succesfully');
+})
+.catch((err) => {
+	console.log('err');
+})
 
-	//console.log(typeof currentUserCount);
-
-	return currentUserCount;
-}
-
-async function createNewUserID() {
-	let newUserID = 'USRx';
-
-	let newUserCount = await getCurrentUserCount() + 1;
-
-	while ((newUserID + newUserCount.toString()).length < 9)
-		newUserID = newUserID + '0';
-	newUserID = newUserID + newUserCount.toString();
-
-	return newUserID;
-}
-
-let newUserCount = await getCurrentUserCount() + 1;
-let newUserID = await createNewUserID();
-var add = await connection.query("\
-	INSERT INTO users \
-	VALUES (?, ?, 'name', 'password', 'newEmail', 1234567890, false);\
-", [newUserID, 'newUsername' + await newUserCount.toString()]);
-
-
-//const DELETE_ALL_USERS = await connection.query("DELETE FROM users")
-
-const SELECT_All_USERS = await connection.query("SELECT * FROM users")
-console.log(SELECT_All_USERS)
-
-process.exit()
+app.listen(PORT, () => {
+	console.log(api)
+	console.log(`server is running at http://localhost:${PORT}`)
+});

@@ -1,7 +1,22 @@
 {
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "mysql": "^2.18.1",
-    "mysql2": "^3.11.5"
-  }
+	"dependencies": {
+		"body-parser": "^1.20.3",
+		"dotenv": "^16.4.7",
+		"express": "^4.21.2",
+		"mongoose": "^8.8.4",
+		"morgan": "^1.10.0",
+		"mysql": "^2.18.1",
+		"mysql2": "^3.11.5",
+		"nodemon": "^3.1.7"
+	},
+	"name": "lel_shop",
+	"version": "1.0.0",
+	"description": "back_end_lel_shop",
+	"main": "functions.js",
+	"scripts": {
+		"start": "nodemon function.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC"
 }

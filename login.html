@@ -1,263 +1,233 @@
 <!DOCTYPE html>
-<html lang = 'vi'>
-<head prefix = "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Lel Shop / Quên mật khẩu</title>
-	<meta property="og:type" content="article">
-	<meta property="og:site_name" content="Lel Shop">
-	<link rel="icon" type="Image/png" href="Image/Logolel.png">
+<html lang='vi'>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Lel Shop / Quên mật khẩu</title>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Lel Shop">
+    <link rel="icon" type="Image/png" href="Image/Logolel.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
     <link rel="stylesheet" href="Css/style.css">
 </head>
+
 <body id="page_mypage_login" class="mypage">
-		<div class="ec-layoutRole">
-			<div class="ec-layoutRole__header">
-		<div class="ec-headerNaviRole">
-<div class="ec-headerNaviRole__left">
-	<div class="ec-headerNaviRole__search">
-<div class="ec-headerSearch">
-<form method="get" class="searchform" action="">
-	<div class="ec-headerSearch__category">
-		<div class="ec-select ec-select_search">
-			<select name="category_id" class="category_id">
-				<option value="">Tất cả sản phẩm</option>
-				<option value="">Theo tiêu đề</option>
-				<option value=""> Blue Archive</option>
-				<option value=""> Arknights</option>
-				<option value="">Theo danh mục</option>
-				<option value=""> Standee/Figures</option>
-				<option value=""> Phụ kiện</option>
-				<option value=""> Sách/Album</option>
-			</select>
-
-		</div>
-	</div>
-	<div class="ec-headerSearch__keyword">
-		<div class="ec-input">
-			<input type="search" name="name" maxlength="50" class="search-name" placeholder="Tìm kiếm"/>
-			<button class="ec-headerSearch__keywordBtn" type="submit">
-				<div class="ec-icon">
-					<img src="/icon/search-dark.svg" alt="">
-				</div>
-			</button>
-		</div>
-	</div>
-</form>
-</div>
-
-	</div>
-	<div class="ec-headerRole__navSP">
-		
-<div class="ec-headerNavSP">
-<i class="fas fa-bars"></i>
-</div>
-	</div>
-</div>
-<div class="ec-headerNaviRole__right">
-	<div class="ec-headerNaviRole__nav">
-		
-<div class="ec-headerNav">
-		<div class="ec-headerNav__item">
-		<a href="/signup.html">
-			<i class="ec-headerNav__itemIcon fas fa-user fa-fw"></i>
-			<span class="ec-headerNav__itemLink">Đăng ký</span>
-		</a>
-	</div>
-				<div class="ec-headerNav__item">
-			<a href="/live.html">
-				<i class="ec-headerNav__itemIcon fas fa-wifi fa-fw"></i>
-				<span class="ec-headerNav__itemLink">Live stream</span>
-			</a>
-		</div>
-			<div class="ec-headerNav__item">
-		<a href="/login.html">
-			<i class="ec-headerNav__itemIcon fas fa-lock fa-fw"></i>
-			<span class="ec-headerNav__itemLink">Đăng nhập</span>
-		</a>
-	</div>
-	<div class="ec-headerNav__item">
-	<a href="/faq.html">
-		<i class="ec-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
-		<span class="ec-headerNav__itemLink">Hỗ trợ</span>
-	</a>
-</div>
-</div>
-
-	</div>
-	<div class="ec-headerRole__cart">
-		<div class="ec-cartNaviWrap">
-<div class="ec-cartNavi">
-	<i class="ec-cartNavi__icon fas fa-shopping-cart">
-		<span class="ec-cartNavi__badge">0</span>
-	</i>
-	<div class="ec-cartNavi__label">
-		<div class="ec-cartNavi__price">0đ</div>
-	</div>
-</div>
-		<div class="ec-cartNaviNull">
-		<div class="ec-cartNaviNull__message">
-			<p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
-		</div>
-	</div>
-</div>
-
-	</div>
-</div>
-</div>
-
-		<style>
-@media screen and (max-width:500px){
+    <div class="ec-layoutRole">
+        <div class="ec-layoutRole__header">
+            <div class="ec-headerNaviRole">
+                <div class="ec-headerNaviRole__left">
+                    <div class="ec-headerNaviRole__search">
+                        <div class="ec-headerSearch">
+                            <form method="get" class="searchform" action="">
+                                <div class="ec-headerSearch__category">
+                                    <div class="ec-select ec-select_search">
+                                        <select name="category_id" class="category_id">
+                                            <option value="">Tất cả sản phẩm</option>
+                                            <option value="">Theo tiêu đề</option>
+                                            <option value=""> Blue Archive</option>
+                                            <option value=""> Arknights</option>
+                                            <option value="">Theo danh mục</option>
+                                            <option value=""> Standee/Figures</option>
+                                            <option value=""> Phụ kiện</option>
+                                            <option value=""> Sách/Album</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ec-headerSearch__keyword">
+                                    <div class="ec-input">
+                                        <input type="search" name="name" maxlength="50" class="search-name" placeholder="Tìm kiếm" />
+                                        <button class="ec-headerSearch__keywordBtn" type="submit">
+                                            <div class="ec-icon">
+                                                <img src="/icon/search-dark.svg" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ec-headerRole__navSP">
+                        <div class="ec-headerNavSP">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec-headerNaviRole__right">
+                    <div class="ec-headerNaviRole__nav">
+                        <div class="ec-headerNav">
+                            <div class="ec-headerNav__item">
+                                <a href="/signup.html">
+                                    <i class="ec-headerNav__itemIcon fas fa-user fa-fw"></i>
+                                    <span class="ec-headerNav__itemLink">Đăng ký</span>
+                                </a>
+                            </div>
+                            <div class="ec-headerNav__item">
+                                <a href="/live.html">
+                                    <i class="ec-headerNav__itemIcon fas fa-wifi fa-fw"></i>
+                                    <span class="ec-headerNav__itemLink">Live stream</span>
+                                </a>
+                            </div>
+                            <div class="ec-headerNav__item">
+                                <a href="/login.html">
+                                    <i class="ec-headerNav__itemIcon fas fa-lock fa-fw"></i>
+                                    <span class="ec-headerNav__itemLink">Đăng nhập</span>
+                                </a>
+                            </div>
+                            <div class="ec-headerNav__item">
+                                <a href="/faq.html">
+                                    <i class="ec-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
+                                    <span class="ec-headerNav__itemLink">Hỗ trợ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ec-headerRole__cart">
+                        <div class="ec-cartNaviWrap">
+                            <div class="ec-cartNavi">
+                                <i class="ec-cartNavi__icon fas fa-shopping-cart">
+                                    <span class="ec-cartNavi__badge">0</span>
+                                </i>
+                                <div class="ec-cartNavi__label">
+                                    <div class="ec-cartNavi__price">0đ</div>
+                                </div>
+                            </div>
+                            <div class="ec-cartNaviNull">
+                                <div class="ec-cartNaviNull__message">
+                                    <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                @media screen and (max-width:500px){
 
 .ec-headerTitle__title img {width:220px;}
 
 }
 </style>
-
-<div class="ec-headerRole">
-<div class="ec-headerRole__title">
-	<div class="ec-headerTitle">
-		<div class="ec-headerTitle__title">
-			<h1>
-				<a href="/index.html">
-											<img src="/Image/Logos/Panel.png">
-				</a>
-			</h1>
-		</div>
-	</div>
-</div>
-</div>
-	<!-- ▲ロゴ -->
-<!-- ▼カテゴリナビ(PC) -->
-		
-
-<div class="ec-categoryNaviRole">
-	<div class="ec-itemNav">
-	<ul class="ec-itemNav__nav">
-						<li>
-								<a href="">
-		Chủ đề sản phảm
-	</a>
-	
-		<ul>
-						<li>
-								<a href="">
-		Blue Archive
-	</a>
-	
-	
-			</li>
-						<li>
-								<a href="">
-		Arknights
-	</a>
-	
-	
-			</li>
-				</ul>
-	
-			</li>
-						<li>
-								<a href="">
-		Danh mục sản phẩm
-	</a>
-	
-		<ul>
-						<li>
-								<a href="">
-		Standee/Figures
-	</a>
-	
-	
-			</li>
-						<li>
-								<a href="">
-		Phụ kiện
-	</a>
-	
-	
-			</li>
-						<li>
-								<a href="">
-		Sách/Album
-	</a>
-	
-	
-			</li>
-				</ul>
-	
-			</li>
-	</div>
-	</div>
-
-<div class="ec-layoutRole__contents">
-                
-                
-	<div class="ec-layoutRole__main">
-					
-						<div class="ec-role">
-	<div class="ec-pageHeader">
-		<h1>Đăng nhập</h1>
-	</div>
-	<div class="ec-off2Grid">
-		<div class="ec-off2Grid__cell">
-			<form name="login_mypage" id="login_mypage" method="post" action="/login.html">
-									<div class="ec-login">
-					<div class="ec-login__icon">
-						<div class="ec-icon"><img src="icon/user.svg" alt=""></div>
-					</div>
-					<div class="ec-login__input">
-						<div class="ec-input">
-							<input type="email" id="login_email" name="login_email" required="required" maxlength="255" style="ime-mode: disabled;" placeholder="Email" autofocus="autofocus" class="form-control" />
-							<input type="password" id="login_pass" name="login_pass" required="required" maxlength="255" placeholder="Mật khẩu" class="form-control" />
-						</div>
-													<div class="ec-checkbox">
-							<label>
-																		<div class="form-check">        <input type="checkbox" id="login_memory" name="login_memory" class="form-check-input" value="1" />
-	<label class="form-check-label" for="login_memory">Nhớ đăng nhập</label></div>
-																</label>
-						</div>
-																										</div>
-					<div class="ec-grid2">
-						<div class="ec-grid2__cell">
-							<div class="ec-login__actions">
-								<button type="submit"
-										class="ec-blockBtn--cancel">Xác nhận</button>
-							</div>
-						</div>
-						<div class="ec-grid2__cell">
-							<div class="ec-login__link"><a class="ec-link"
-														   href="/forgot.html">Quên mật khẩu?</a>
-							</div>
-							<div class="ec-login__link"><a class="ec-link"
-														   href="/signup.html">Đăng ký thành viên mới</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-							</div>
-
-				</div>
-
-				<div class="ec-layoutRole__footer">
-					<!-- ▼フッター -->
-				<div class="ec-footerRole">
-		<div class="ec-footerRole__inner">
-			<div class="ec-footerTitle">
-				<div class="ec-footerTitle__logo">
-					<a href="/index.html">
-										<img src="/Image/Logos/Panel-WT.png" style="width:300px">
-						</a>
-				</div>
-				<div class="ec-footerTitle__copyright"></div>
-			</div>
-		</div>
-		</div>
+            <div class="ec-headerRole">
+                <div class="ec-headerRole__title">
+                    <div class="ec-headerTitle">
+                        <div class="ec-headerTitle__title">
+                            <h1>
+                                <a href="/index.html">
+                                    <img src="/Image/Logos/Panel.png">
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ▲ロゴ -->
+            <!-- ▼カテゴリナビ(PC) -->
+            <div class="ec-categoryNaviRole">
+                <div class="ec-itemNav">
+                    <ul class="ec-itemNav__nav">
+                        <li>
+                            <a href="">
+                                Chủ đề sản phảm
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Blue Archive
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Arknights
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                Danh mục sản phẩm
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Standee/Figures
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Phụ kiện
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Sách/Album
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                </div>
+            </div>
+            <div class="ec-layoutRole__contents">
+                <div class="ec-layoutRole__main">
+                    <div class="ec-role">
+                        <div class="ec-pageHeader">
+                            <h1>Đăng nhập</h1>
+                        </div>
+                        <div class="ec-off2Grid">
+                            <div class="ec-off2Grid__cell">
+                                <form name="login_mypage" id="login_mypage" method="post" action="/login.html">
+                                    <div class="ec-login">
+                                        <div class="ec-login__icon">
+                                            <div class="ec-icon"><img src="icon/user.svg" alt=""></div>
+                                        </div>
+                                        <div class="ec-login__input">
+                                            <div class="ec-input">
+                                                <input type="email" id="login_email" name="login_email" required="required" maxlength="255" style="ime-mode: disabled;" placeholder="Email" autofocus="autofocus" class="form-control" />
+                                                <input type="password" id="login_pass" name="login_pass" required="required" maxlength="255" placeholder="Mật khẩu" class="form-control" />
+                                            </div>
+                                            <div class="ec-checkbox">
+                                                <label>
+                                                    <div class="form-check"> <input type="checkbox" id="login_memory" name="login_memory" class="form-check-input" value="1" />
+                                                        <label class="form-check-label" for="login_memory">Nhớ đăng nhập</label></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="ec-grid2">
+                                            <div class="ec-grid2__cell">
+                                                <div class="ec-login__actions">
+                                                    <button type="submit" class="ec-blockBtn--cancel">Xác nhận</button>
+                                                </div>
+                                            </div>
+                                            <div class="ec-grid2__cell">
+                                                <div class="ec-login__link"><a class="ec-link" href="/forgot.html">Quên mật khẩu?</a>
+                                                </div>
+                                                <div class="ec-login__link"><a class="ec-link" href="/signup.html">Đăng ký thành viên mới</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ec-layoutRole__footer">
+                <!-- ▼フッター -->
+                <div class="ec-footerRole">
+                    <div class="ec-footerRole__inner">
+                        <div class="ec-footerTitle">
+                            <div class="ec-footerTitle__logo">
+                                <a href="/index.html">
+                                    <img src="/Image/Logos/Panel-WT.png" style="width:300px">
+                                </a>
+                            </div>
+                            <div class="ec-footerTitle__copyright"></div>
+                        </div>
+                    </div>
+                </div>
 </body>
+
 </html>
