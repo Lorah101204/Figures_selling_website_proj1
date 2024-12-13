@@ -17,8 +17,20 @@ const productSchema = mongoose.Schema({
 		ref: 'Category',
 		required: true,
 	},
+	is_featured: {
+		type: Boolean,
+		default: false,
+	},
 	desc: String,
 	type: String,
 })
+
+productSchema.virtual('id').get(function() {
+	return this._id.toHexString();
+});
+
+productSchema.set('toJSON', {
+	virtuals: true,
+});
 
 exports.Product = mongoose.model('Product', productSchema);
