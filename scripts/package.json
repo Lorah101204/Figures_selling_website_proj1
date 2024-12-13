@@ -16,7 +16,7 @@
 	"description": "back_end_lel_shop",
 	"main": "functions.js",
 	"scripts": {
-		"start": "nodemon function.js",
+		"start": "node function.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "echo 'No build step needed for backend'"
 	},
