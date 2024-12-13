@@ -5,6 +5,16 @@ const mongoose = require('mongoose');
 const multer = require('multer')
 const router = express.Router();
 
+var storage = multer.diskStorage({
+	destination: function(req, file, cb) {
+		cb(null, '../Image');
+	},
+	filename: function(req, file, cb) {
+		const fileName = file.originalName.split(' ').join('-');
+		cb(null, file.fieldname + '-' + Date.now());
+	}
+})
+
 // GET
 router.get(`/`, async (req, res) => {
 	let filter = {};

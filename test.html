@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="vi">
+<!--Xac dinh ngon ngu chinh cua tai lieu html-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lel Shop</title>
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="LEL SHOP">
+	<!--<meta property="og:url" content="https://lelshop.com/">
+		<link rel="canonical" href="https://lelshop.com/">  -->
+	<link rel="icon" type="Image/png" href="/Image/Logolel.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+	<link rel="stylesheet" href="/Css/style.css">
+	<!--slick_slider custom-->
+	<style>
+		.slick-slider {
+				margin-bottom: 30px;
+			}
+	
+			.slick-dots {
+				position: relative;
+				bottom: -15px;
+				display: block;
+				width: 100%;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+			}
+	
+			.slick-dots li {
+				position: relative;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin: 0 5px;
+				padding: 0;
+	
+				cursor: pointer;
+			}
+	
+			.slick-dots li button {
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				padding: 5px;
+				cursor: pointer;
+				color: transparent;
+				border: 0;
+				outline: none;
+				background: transparent;
+			}
+	
+			.slick-dots li button:hover,
+			.slick-dots li button:focus {
+				outline: none;
+			}
+	
+			.slick-dots li button:hover:before,
+			.slick-dots li button:focus:before {
+				opacity: 1;
+			}
+	
+			.slick-dots li button:before {
+				content: " ";
+				line-height: 20px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 12px;
+				height: 12px;
+				text-align: center;
+				opacity: .25;
+				background-color: black;
+				border-radius: 50%;
+			}
+	
+			.slick-dots li.slick-active button:before {
+				opacity: .75;
+				background-color: black;
+			}
+	
+			.slick-dots li button.thumbnail img {
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="ec-layoutRole">
+		<div class="ec-layoutRole__header">
+			<div class="ec-headerNaviRole">
+				<div class="ec-headerNaviRole__left">
+					<div class="ec-headerNaviRole__search">
+						<div class="ec-headerSearch">
+							<form method="get" class="searchform" action="">
+								<div class="ec-headerSearch__category">
+									<div class="ec-select ec-select_search">
+										<select name="category_id" class="category_id">
+											<option value="">Tất cả sản phẩm</option>
+											<option value="">Theo tiêu đề</option>
+											<option value=""> Blue Archive</option>
+											<option value=""> Arknights</option>
+											<option value="">Theo danh mục</option>
+											<option value=""> Standee/Figures</option>
+											<option value=""> Phụ kiện</option>
+											<option value=""> Sách/Album</option>
+										</select>
+									</div>
+								</div>
+								<div class="ec-headerSearch__keyword">
+									<div class="ec-input">
+										<input type="search" name="name" maxlength="50" class="search-name" placeholder="Tìm kiếm" />
+										<button class="ec-headerSearch__keywordBtn" type="submit">
+											<div class="ec-icon">
+												<img src="/icon/search-dark.svg" alt="">
+											</div>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="ec-headerRole__navSP">
+						<div class="ec-headerNavSP">
+							<i class="fas fa-bars"></i>
+						</div>
+					</div>
+				</div>
+				<div class="ec-headerNaviRole__right">
+					<div class="ec-headerNaviRole__nav">
+						<div class="ec-headerNav">
+							<div class="ec-headerNav__item">
+								<a href="/signup.html">
+									<i class="ec-headerNav__itemIcon fas fa-user fa-fw"></i>
+									<span class="ec-headerNav__itemLink">Đăng ký</span>
+								</a>
+							</div>
+							<div class="ec-headerNav__item">
+								<a href="/live.html">
+									<i class="ec-headerNav__itemIcon fas fa-wifi fa-fw"></i>
+									<span class="ec-headerNav__itemLink">Live stream</span>
+								</a>
+							</div>
+							<div class="ec-headerNav__item">
+								<a href="/login.html">
+									<i class="ec-headerNav__itemIcon fas fa-lock fa-fw"></i>
+									<span class="ec-headerNav__itemLink">Đăng nhập</span>
+								</a>
+							</div>
+							<div class="ec-headerNav__item">
+								<a href="/faq.html">
+									<i class="ec-headerNav__itemIcon fas fa-question-circle fa-fw"></i>
+									<span class="ec-headerNav__itemLink">Hỗ trợ</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="ec-headerRole__cart">
+						<div class="ec-cartNaviWrap">
+							<div class="ec-cartNavi">
+								<i class="ec-cartNavi__icon fas fa-shopping-cart">
+									<span class="ec-cartNavi__badge">0</span>
+								</i>
+								<div class="ec-cartNavi__label">
+									<div class="ec-cartNavi__price">0đ</div>
+								</div>
+							</div>
+							<div class="ec-cartNaviNull">
+								<div class="ec-cartNaviNull__message">
+									<p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style>
+				@media screen and (max-width:500px){
+
+.ec-headerTitle__title img {width:220px;}
+
+}
+</style>
+			<div class="ec-headerRole">
+				<div class="ec-headerRole__title">
+					<div class="ec-headerTitle">
+						<div class="ec-headerTitle__title">
+							<h1>
+								<a href="/index.html">
+									<img src="/Image/Logos/Panel.png">
+								</a>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ▲ロゴ -->
+			<!-- ▼カテゴリナビ(PC) -->
+			<div class="ec-categoryNaviRole">
+				<div class="ec-itemNav">
+					<ul class="ec-itemNav__nav">
+						<li>
+							<a href="">
+								Chủ đề sản phảm
+							</a>
+							<ul>
+								<li>
+									<a href="">
+										Blue Archive
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Arknights
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">
+								Danh mục sản phẩm
+							</a>
+							<ul>
+								<li>
+									<a href="">
+										Standee/Figures
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Phụ kiện
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Sách/Album
+									</a>
+								</li>
+							</ul>
+						</li>
+				</div>
+			</div>
+			<!-- ▲カテゴリナビ(PC) -->
+		</div>
+	</div>
+	</div>
+	</div>
+	<!-- ▲ロゴ -->
+	<!-- ▼カテゴリナビ(PC) -->
+	<div class="ec-layoutRole__contents">
+		<div class="ec-layoutRole__main">
+			<figure class="ec-searchnavRole">
+				<img src="https://shopimages.yostar.co.jp/0412224908_6436b6d4b881f.jpg" alt="ブルーアーカイブ" width="100%">
+			</figure>
+			<div class="ec-searchnavRole">
+				<form name="form1" id="form1" method="get" action="?">
+					<input type="hidden" id="mode" name="mode" />
+					<input type="hidden" id="category_id" name="category_id" value="MTExODQ4OTE=" />
+					<input type="hidden" id="name" name="name" />
+					<input type="hidden" id="pageno" name="pageno" />
+					<input type="hidden" id="disp_number" name="disp_number" value="0" />
+					<input type="hidden" id="orderby" name="orderby" value="0" />
+					<input type="hidden" id="available_purchase" name="available_purchase" />
+				</form>
+				<div class="ec-searchnavRole__topicpath">
+					<ol class="ec-topicpath">
+						<li class="ec-topicpath__item"><a href="https://shop.yostar.co.jp/products/list">全て</a>
+						</li>
+						<li class="ec-topicpath__divider">|</li>
+						<li class="ec-topicpath__item"><a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ3Nzg=">タイトルから探す</a>
+						</li>
+						<li class="ec-topicpath__divider">|</li>
+						<li class="ec-topicpath__item--active"><a href="https://shop.yostar.co.jp/products/list?category_id=MTExODQ4OTE=">ブルーアーカイブ</a>
+						</li>
+					</ol>
+				</div>
+				<div class="ec-searchnavRole__infos">
+					<div class="ec-searchnavRole__counter">
+						<span class="ec-font-bold">621件</span><span>の商品が見つかりました</span>
+					</div>
+					<div class="ec-searchnavRole__actions">
+						<div class="ec-select" style="width: 250px; float: right">
+							<select id="" name="disp_number" class="disp-number form-control">
+								<option value="0">20件</option>
+								<option value="1">40件</option>
+								<option value="2">60件</option>
+							</select>
+							<select id="" name="orderby" class="order-by form-control">
+								<option value="0">おすすめ順</option>
+								<option value="1">新着順</option>
+								<option value="2">価格が高い順</option>
+								<option value="3">価格が低い順</option>
+							</select>
+						</div>
+						<div class="ec-select1" style="width: 200px;display: block;float: right;line-height: 35px;">
+							<div class="available-purchase">
+								<div class="form-check"> <input type="checkbox" id="available_purchase_0" name="available_purchase[]" class="form-check-input" value="1" />
+									<label class="form-check-label" for="available_purchase_0">購入可能商品のみ表示</label></div><input type="hidden" id="available_purchase__token" name="available_purchase[]" value="m3oyFvQi2P2c-G7vRaCiqp7RJa1_OXAv4YecSozWYS4" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ec-shelfRole">
+				<ul class="ec-shelfGrid">
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2126">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181000_673c55e850b08.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド チアキ" loading="lazy">
+							</p>
+							<p>アクリルスタンド チアキ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2126" id="productForm2126" action="https://shop.yostar.co.jp/products/add_cart/2126" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2126" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2126" name="product_id" value="2126" /><input type="hidden" id="ProductClass2126" name="ProductClass" value="2400" /><input type="hidden" id="_token2126" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2126" form="productForm2126">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2127">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181015_673c55f726a6d.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド サツキ" loading="lazy">
+							</p>
+							<p>アクリルスタンド サツキ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2127" id="productForm2127" action="https://shop.yostar.co.jp/products/add_cart/2127" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2127" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2127" name="product_id" value="2127" /><input type="hidden" id="ProductClass2127" name="ProductClass" value="2401" /><input type="hidden" id="_token2127" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2127" form="productForm2127">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2128">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181028_673c5604034dd.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド ジュリ" loading="lazy">
+							</p>
+							<p>アクリルスタンド ジュリ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2128" id="productForm2128" action="https://shop.yostar.co.jp/products/add_cart/2128" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2128" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2128" name="product_id" value="2128" /><input type="hidden" id="ProductClass2128" name="ProductClass" value="2402" /><input type="hidden" id="_token2128" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2128" form="productForm2128">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2129">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181042_673c5612703e8.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド フウカ" loading="lazy">
+							</p>
+							<p>アクリルスタンド フウカ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2129" id="productForm2129" action="https://shop.yostar.co.jp/products/add_cart/2129" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2129" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2129" name="product_id" value="2129" /><input type="hidden" id="ProductClass2129" name="ProductClass" value="2403" /><input type="hidden" id="_token2129" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2129" form="productForm2129">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2130">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181055_673c561f4f60e.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド フウカ(正月)" loading="lazy">
+							</p>
+							<p>アクリルスタンド フウカ(正月)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2130" id="productForm2130" action="https://shop.yostar.co.jp/products/add_cart/2130" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2130" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2130" name="product_id" value="2130" /><input type="hidden" id="ProductClass2130" name="ProductClass" value="2404" /><input type="hidden" id="_token2130" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2130" form="productForm2130">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2131">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181108_673c562c66d26.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド セナ" loading="lazy">
+							</p>
+							<p>アクリルスタンド セナ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2131" id="productForm2131" action="https://shop.yostar.co.jp/products/add_cart/2131" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2131" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2131" name="product_id" value="2131" /><input type="hidden" id="ProductClass2131" name="ProductClass" value="2405" /><input type="hidden" id="_token2131" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2131" form="productForm2131">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2132">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181117_673c563573422.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド キララ" loading="lazy">
+							</p>
+							<p>アクリルスタンド キララ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2132" id="productForm2132" action="https://shop.yostar.co.jp/products/add_cart/2132" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2132" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2132" name="product_id" value="2132" /><input type="hidden" id="ProductClass2132" name="ProductClass" value="2406" /><input type="hidden" id="_token2132" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2132" form="productForm2132">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2134">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181134_673c56463e68d.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド ジュンコ" loading="lazy">
+							</p>
+							<p>アクリルスタンド ジュンコ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2134" id="productForm2134" action="https://shop.yostar.co.jp/products/add_cart/2134" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2134" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2134" name="product_id" value="2134" /><input type="hidden" id="ProductClass2134" name="ProductClass" value="2408" /><input type="hidden" id="_token2134" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2134" form="productForm2134">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2135">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181144_673c5650362ac.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド ジュンコ(正月)" loading="lazy">
+							</p>
+							<p>アクリルスタンド ジュンコ(正月)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2135" id="productForm2135" action="https://shop.yostar.co.jp/products/add_cart/2135" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2135" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2135" name="product_id" value="2135" /><input type="hidden" id="ProductClass2135" name="ProductClass" value="2409" /><input type="hidden" id="_token2135" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2135" form="productForm2135">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2133">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181158_673c565e7a1b5.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド イズミ" loading="lazy">
+							</p>
+							<p>アクリルスタンド イズミ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2133" id="productForm2133" action="https://shop.yostar.co.jp/products/add_cart/2133" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2133" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2133" name="product_id" value="2133" /><input type="hidden" id="ProductClass2133" name="ProductClass" value="2407" /><input type="hidden" id="_token2133" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2133" form="productForm2133">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2136">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181209_673c56690b55e.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド イズミ(水着)" loading="lazy">
+							</p>
+							<p>アクリルスタンド イズミ(水着)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2136" id="productForm2136" action="https://shop.yostar.co.jp/products/add_cart/2136" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2136" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2136" name="product_id" value="2136" /><input type="hidden" id="ProductClass2136" name="ProductClass" value="2410" /><input type="hidden" id="_token2136" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2136" form="productForm2136">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2137">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181222_673c567645c62.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド アカリ" loading="lazy">
+							</p>
+							<p>アクリルスタンド アカリ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2137" id="productForm2137" action="https://shop.yostar.co.jp/products/add_cart/2137" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2137" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2137" name="product_id" value="2137" /><input type="hidden" id="ProductClass2137" name="ProductClass" value="2411" /><input type="hidden" id="_token2137" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2137" form="productForm2137">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2138">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181232_673c5680a6a3b.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド アカリ(正月)" loading="lazy">
+							</p>
+							<p>アクリルスタンド アカリ(正月)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2138" id="productForm2138" action="https://shop.yostar.co.jp/products/add_cart/2138" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2138" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2138" name="product_id" value="2138" /><input type="hidden" id="ProductClass2138" name="ProductClass" value="2412" /><input type="hidden" id="_token2138" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2138" form="productForm2138">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2139">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181242_673c568ac7ab2.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド ハルナ" loading="lazy">
+							</p>
+							<p>アクリルスタンド ハルナ</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2139" id="productForm2139" action="https://shop.yostar.co.jp/products/add_cart/2139" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2139" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2139" name="product_id" value="2139" /><input type="hidden" id="ProductClass2139" name="ProductClass" value="2413" /><input type="hidden" id="_token2139" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2139" form="productForm2139">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2140">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181251_673c5693bec21.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド ハルナ(正月)" loading="lazy">
+							</p>
+							<p>アクリルスタンド ハルナ(正月)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2140" id="productForm2140" action="https://shop.yostar.co.jp/products/add_cart/2140" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2140" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2140" name="product_id" value="2140" /><input type="hidden" id="ProductClass2140" name="ProductClass" value="2414" /><input type="hidden" id="_token2140" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2140" form="productForm2140">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/2141">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1119181300_673c569c67aae.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド ハルナ(体操服)" loading="lazy">
+							</p>
+							<p>アクリルスタンド ハルナ(体操服)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form2141" id="productForm2141" action="https://shop.yostar.co.jp/products/add_cart/2141" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity2141" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id2141" name="product_id" value="2141" /><input type="hidden" id="ProductClass2141" name="ProductClass" value="2415" /><input type="hidden" id="_token2141" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="2141" form="productForm2141">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/1942">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1018161013_671209d57894d.jpg?x-oss-process=image/resize,l_800" alt="カードホルダー&amp;チェキ風カードセット(Antique Seraphim)" loading="lazy">
+							</p>
+							<p>カードホルダー&amp;チェキ風カードセット(Antique Seraphim)</p>
+							<p class="price02-default">
+								￥1,800
+							</p>
+						</a>
+						<form name="form1942" id="productForm1942" action="https://shop.yostar.co.jp/products/add_cart/1942" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity1942" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id1942" name="product_id" value="1942" /><input type="hidden" id="ProductClass1942" name="ProductClass" value="2207" /><input type="hidden" id="_token1942" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="1942" form="productForm1942">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/1955">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1009130734_67060186d693c.jpg?x-oss-process=image/resize,l_800" alt="クリアポスター(サクラコ(アイドル))" loading="lazy">
+							</p>
+							<p>クリアポスター(サクラコ(アイドル))</p>
+							<p class="price02-default">
+								￥1,000
+							</p>
+						</a>
+						<form name="form1955" id="productForm1955" action="https://shop.yostar.co.jp/products/add_cart/1955" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity1955" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id1955" name="product_id" value="1955" /><input type="hidden" id="ProductClass1955" name="ProductClass" value="2220" /><input type="hidden" id="_token1955" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="1955" form="productForm1955">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/1956">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1009130801_670601a169137.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド マリー(アイドル)" loading="lazy">
+							</p>
+							<p>アクリルスタンド マリー(アイドル)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form1956" id="productForm1956" action="https://shop.yostar.co.jp/products/add_cart/1956" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity1956" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id1956" name="product_id" value="1956" /><input type="hidden" id="ProductClass1956" name="ProductClass" value="2221" /><input type="hidden" id="_token1956" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="1956" form="productForm1956">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+					<li class="ec-shelfGrid__item">
+						<a href="https://shop.yostar.co.jp/products/detail/1957">
+							<p class="ec-shelfGrid__item-image">
+								<img src="https://shopimages.yostar.co.jp/1009130828_670601bc52a68.jpg?x-oss-process=image/resize,l_800" alt="アクリルスタンド マリー(体操服)" loading="lazy">
+							</p>
+							<p>アクリルスタンド マリー(体操服)</p>
+							<p class="price02-default">
+								￥1,650
+							</p>
+						</a>
+						<form name="form1957" id="productForm1957" action="https://shop.yostar.co.jp/products/add_cart/1957" method="post">
+							<div class="ec-productRole__actions">
+								<div class="ec-numberInput"><span>数量</span>
+									<input type="number" id="quantity1957" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
+								</div>
+							</div>
+							<input type="hidden" id="product_id1957" name="product_id" value="1957" /><input type="hidden" id="ProductClass1957" name="ProductClass" value="2222" /><input type="hidden" id="_token1957" name="_token" value="g7ClhpdERjSOh1YfMxhUjFmTWzVM5v_RY9UnZaKgXv4" />
+						</form>
+						<div class="ec-productRole__btn">
+							<button type="submit" class="ec-blockBtn--action add-cart" data-cartid="1957" form="productForm1957">
+								カートに入れる
+							</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="ec-modal">
+				<div class="ec-modal-overlay">
+					<div class="ec-modal-wrap">
+						<span class="ec-modal-close"><span class="ec-icon"><img src="/html/template/default/assets/icon/cross-dark.svg" alt="" /></span></span>
+						<div id="ec-modal-header" class="text-center">カートに追加しました。</div>
+						<div class="ec-modal-box">
+							<div class="ec-role">
+								<span class="ec-inlineBtn--cancel">お買い物を続ける</span>
+								<a href="https://shop.yostar.co.jp/cart" class="ec-inlineBtn--action">カートへ進む</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ec-pagerRole">
+				<ul class="ec-pager">
+					<li class="ec-pager__item--active"><a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=1"> 1 </a></li>
+					<li class="ec-pager__item"><a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=2"> 2 </a></li>
+					<li class="ec-pager__item"><a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=3"> 3 </a></li>
+					<li class="ec-pager__item"><a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=4"> 4 </a></li>
+					<li class="ec-pager__item"><a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=5"> 5 </a></li>
+					<li class="ec-pager__item">...</li>
+					<li class="ec-pager__item">
+						<a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=2">次へ</a></li>
+					<li class="ec-pager__item">
+						<a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=32">最後へ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="ec-layoutRole__footer">
+		<!-- ▼フッター -->
+		<div class="ec-footerRole">
+			<div class="ec-footerRole__inner">
+				<div class="ec-footerTitle">
+					<div class="ec-footerTitle__logo">
+						<a href="/index.html">
+							<img src="/Image/Logos/Panel-WT.png" style="width:300px">
+						</a>
+					</div>
+					<div class="ec-footerTitle__copyright"></div>
+				</div>
+			</div>
+		</div>
+		<!-- ▲フッター -->
+	</div>
+</body>

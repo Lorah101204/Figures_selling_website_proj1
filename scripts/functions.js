@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const app = express();
+const cors = require('cors');
 const PORT = 3000;
 
 require('dotenv/config');
@@ -16,6 +17,7 @@ const categoriesRouter = require('./routers/categories')
 
 //middleware
 app.use(bodyParser.json());
+app.use(cors());
 app.use(morgan('tiny'));
 app.use(`${api}/categories`, categoriesRouter);
 app.use(`${api}/products`, productsRouter);
@@ -26,7 +28,6 @@ app.get('/', (req, res) => {
 	res.send('Hello API!');
 });
 */
-const Product = require('./models/product')
 
 mongoose.connect(process.env.CONNECTION, {
 	dbName: 'store'
