@@ -2,6 +2,7 @@ const {Product} = require('../models/product');
 const {Category} = require('../models/category');
 const express = require('express');
 const mongoose = require('mongoose');
+const multer = require('multer')
 const router = express.Router();
 
 // GET

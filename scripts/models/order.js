@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const orderSchema = mongoose.Schema({
-	user_id: { 
-		type: String, 
+const orderSchema = new mongoose.Schema({
+	user: { 
+		type: mongoose.Schema.Types.ObjectId, 
 		required: true 
 	},
 	zipcode: { 
@@ -12,5 +12,13 @@ const orderSchema = mongoose.Schema({
 	city: String,
 	country: String,
 })
+
+orderSchema.virtual('id').get(function() {
+	return this._id.toHexString();
+});
+
+orderSchema.set('toJSON', {
+	virtuals: true,
+});
 
 exports.Order = mongoose.model('Order', orderSchema);
