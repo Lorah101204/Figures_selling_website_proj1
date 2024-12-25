@@ -1,10 +1,12 @@
-const express = require('express')
+const express = require('express');
+const app = express();
+
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const app = express();
 const cors = require('cors');
-const PORT = 3000;
+const authJwt = require('./helpers/jwt')
+const errorHandler = require('./helpers/error-handler')
 
 require('dotenv/config');
 const api = process.env.API_URL;
@@ -17,8 +19,12 @@ const categoriesRouter = require('./routers/categories')
 
 //middleware
 app.use(bodyParser.json());
-app.use(cors());
 app.use(morgan('tiny'));
+app.use(cors());
+app.options('*', cors());
+app.use(authJwt());
+app.use(errorHandler);
+
 app.use(`${api}/categories`, categoriesRouter);
 app.use(`${api}/products`, productsRouter);
 app.use(`${api}/users`, usersRouter);
@@ -39,7 +45,7 @@ mongoose.connect(process.env.CONNECTION, {
 	console.log('err');
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
 	console.log(api)
-	console.log(`server is running at http://localhost:${PORT}`)
+	console.log(`server is running at http://localhost:${process.env.PORT}`)
 });
