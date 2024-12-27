@@ -1,15 +1,22 @@
 const mongoose = require('mongoose')
 
 const itemSchema = new mongoose.Schema({
+	/*
 	order: {
 		type: mongoose.Schema.Types.ObjectId,
+		ref: 'Order',
 		required: true,
 	},
+	*/
 	product: { 
 		type: mongoose.Schema.Types.ObjectId,
+		ref: 'Product',
 		required: true,
 	},
-	quantity: Number,
+	quantity: {
+		type: Number,
+		required: true,
+	}
 })
 
 itemSchema.virtual('id').get(function() {
