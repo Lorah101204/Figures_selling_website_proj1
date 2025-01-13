@@ -103,16 +103,27 @@
 							<form method="get" class="searchform" action="">
 								<div class="ec-headerSearch__category">
 									<div class="ec-select ec-select_search">
-										<select name="category_id" class="category_id">
+										<select id = "categories" name="category_id" class="category_id">
 											<option value="">Tất cả sản phẩm</option>
-											<option value="">Theo tiêu đề</option>
-											<option value=""> Blue Archive</option>
-											<option value=""> Arknights</option>
-											<option value="">Theo danh mục</option>
-											<option value=""> Standee/Figures</option>
-											<option value=""> Phụ kiện</option>
-											<option value=""> Sách/Album</option>
 										</select>
+										<script>
+											async function fetchCategories() {
+												try { 
+													const response = await fetch('http://localhost:3000/api/v1/categories');
+													const data = await response.json();
+
+													const select = document.getElementById('categories');
+													data.forEach(category => {
+														const option = document.createElement('option');
+														option.value = category.id;
+														option.textContent = category.name;
+														select.appendChild(option);
+													});
+												} catch (error) { 
+													console.error('Error fetching categories:', error);
+												}
+											}
+										</script>
 									</div>
 								</div>
 								<div class="ec-headerSearch__keyword">
@@ -319,7 +330,8 @@
 								const productList = document.querySelector('.ec-shelfGrid');
 								data.forEach(product => {
 									const listItem = document.createElement('li');
-									listItem.classList.add('ec-shelfGrid-it__item');
+									listItem.classList.add('ec-shelfGrid__item');
+
 									listItem.innerHTML = `
 									<a href="">
 										<p class="ec-shelfGrid__item-image">
@@ -332,7 +344,7 @@
 									</a>
 									<form name="form" id="productForm" action="" method="post">
 										<div class="ec-productRole__actions">
-											<div class="ec-numberInput"><span>数量</span>
+											<div class="ec-numberInput"><span>Số lượng</span>
 												<input type="number" id="quantity2126" name="quantity" required="required" min="1" maxlength="9" class="quantity form-control" value="1" />
 											</div>
 										</div>
@@ -344,6 +356,7 @@
 										</button>
 									</div>
 									`;
+
 									productList.appendChild(listItem);
 								});
 							})
@@ -375,9 +388,11 @@
 					<li class="ec-pager__item"><a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=5"> 5 </a></li>
 					<li class="ec-pager__item">...</li>
 					<li class="ec-pager__item">
-						<a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=2">次へ</a></li>
+						<a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=2">Trang sau</a>
+					</li>
 					<li class="ec-pager__item">
-						<a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=32">最後へ</a></li>
+						<a href="/products/list?category_id=MTExODQ4OTE%3D&amp;pageno=32">Trang cuối</a>
+					</li>
 				</ul>
 			</div>
 		</div>
